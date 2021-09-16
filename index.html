@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<h1>Test</h1>
-<h3>Hello</h3>
+
 <body>
-    
+    <h1>Practice</h1>
+    <p id="lastModif"></p>
+<script>
+    const options = {year: "2-digit", 
+    month: "2-digit", 
+    day: "2-digit", 
+    hourCycle: "h24", 
+    hour: "2-digit", 
+    minute: "2-digit"};
+    document.getElementById("lastModif").innerHTML = new Date(document.lastModified).toLocaleDateString("en-US", options);
+
+</script>
 </body>
 </html>
