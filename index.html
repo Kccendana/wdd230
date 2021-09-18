@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="This is Assignment Portal of Katherine Cendana for WDD 230: Web Frontend at Brigham Young University-Idaho.">
+    <title>WDD230 Katherine Cendana Weekly Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/lastmodif.js"></script>
 </head>
 
 <body>
-    <h1>Practice</h1>
-    <p id="lastModif"></p>
-<script>
-    const options = {year: "2-digit",
-    month: "2-digit", 
-    day: "2-digit", 
-    hourCycle: "h24", 
-    hour: "2-digit", 
-    minute: "2-digit"};
-    document.getElementById("lastModif").innerHTML = new Date(document.lastModified).toLocaleDateString("en-US", options);
-
-</script>
+    <header>
+        <img src="images/rsz_kcpic.jpg" alt="my photo">
+        <h1>Katherine Cendana</h1>
+    </header>
+    <main>
+<h2>WDD 230: Assignment Portal</h2>
+<ul>
+    <li><a href="#">Lesson 2: Assignment Link</a></li>
+    <li><a href="#">Lesson 3: Assignment Link</a></li>
+    <li><a href="#">Link</a></li>
+ 
+</ul>
+    </main>
+    <footer>
+<p>&copy; <span id="year"></span>| Katherine Cendana | Mie | <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+<p>Last Updated:<span id="lastModif"></span></p>
+    </footer>
 </body>
 </html>
