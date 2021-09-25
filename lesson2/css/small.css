@@ -65,4 +65,5 @@ a{
 }
 a:hover{
     background-color: var(--color1);
+    color: white;
 }
