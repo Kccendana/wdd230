@@ -60,7 +60,6 @@ section h3{
     margin-bottom: -13px;
 }
 a{
-    text-decoration: none;
     color: var(--fontcolor);
 }
 a:hover{
