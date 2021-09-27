@@ -47,7 +47,7 @@ main section img{
 }
 p{
     font-family: 'Roboto', sans-serif;
-    text-align: justify;
+    text-align: left;
     padding: 2px;
     color: var(--fontcolor);
 }
