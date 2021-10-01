@@ -128,3 +128,9 @@ h3{
     background-color: var(--fontcolor);
     color: white;
 }
+ul li{
+    list-style-type: none;
+}
+main ul li{
+    font-family: 'Merriweather', serif;   
+}
