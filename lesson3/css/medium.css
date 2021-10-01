@@ -1,0 +1,9 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em){
+    
+        nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%;}
+        header{display: flex;}
+        h1{ margin-top: 55px;}
+    
+}
