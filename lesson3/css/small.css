@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --gradient: linear-gradient(90deg, #00B0F0, #00E5DC, #7EF9C1);
+    --color1: #00B0F0;
+    --color2: #00E5DC;
+    --color3: #7EF9C1;
+    --fontcolor: #182F2C;
+    --nav: linear-gradient(90deg, #7EF9C1, #00E5DC, #00B0F0);
+}
+.logo{
+    width: 110px;
+    padding: 10px;
+}
+body{
+    max-width: 980px;
+    margin: 5% auto;
+    background-color: #EAFCFF;
+}
+footer,
+header{
+    background-image: var(--gradient);
+    color: var(--fontcolor);
+    text-align: center;
+    padding: .5rem;
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+    overflow: auto;
+
+}
+h1, 
+h2,
+h3{
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    color: var(--fontcolor);
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    margin-top: -20px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+nav ul li a {
+	display: block;
+	color: var(--fontcolor);
+	text-align: center;
+	padding: 0.5rem;
+	text-decoration: none;
+	font-size: 1rem;
+    background-image: var(--nav);
+}
+nav a:hover {
+	color: white;
+    background: var(--color1);
+    
+}
+.active {
+	color: white;
+}
+h2,
+h3{
+    padding: 20px;
+}
+
+/*
+body{
+    background-image: url(../images/dim-gunger-iCVkB9YKeSQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    
+}
+.logo{
+    width: 100px;
+    padding: 10px;
+}
+.glass{
+    margin: 0 auto;
+    width: 780px;
+    border-radius: 2rem;
+    background:rgba(255, 255, 255, .3);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+    border-top: 4px solid rgba(255, 255, 255, .7);
+    border-left: 4px solid rgba(255, 255, 255, .7);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+
+}
+h1,
+h2,
+h3{
+    font-family: 'Merriweather', serif;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+nav,
+header,
+main{
+
+
+}
+nav{
+    width: 100%;
+    background-color: #00526F;
+    margin: 0 auto;
+    display: flex;
+}
+nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    display: block;
+    margin: 0 auto;
+}*/
