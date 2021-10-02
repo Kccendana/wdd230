@@ -16,7 +16,11 @@
 body{
     max-width: 980px;
     margin: 5% auto;
-    background-color: #EAFCFF;
+    /*background-color: #EAFCFF;
+    background-image: url(../images/greentrees.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;*/
     
 }
 footer,
@@ -24,9 +28,9 @@ header{
     background-image: var(--gradient);
     color: var(--fontcolor);
     text-align: center;
-    padding: .5rem;
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
     overflow: auto;
+    padding: 1rem;
     
 
 }
@@ -82,9 +86,12 @@ h3{
 }
 main{
     margin-top: -20px;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
     border-left: 4px solid rgba(255, 255, 255, .7);
+   /* backdrop-filter: blur(8px);*/
+    display: flex;
+    display: block;
 }
 header{
     border-top-left-radius: 20px;
@@ -97,13 +104,12 @@ footer{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     border-left: 4px solid rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
+    margin-top:-15px;
 }
 h3{
     margin-top: -20px;
 }
-.homep {
- column-count: 2;  
-}
+
 .colors td{
     width: 25%;
     height: 3em;
@@ -132,5 +138,15 @@ ul li{
     list-style-type: none;
 }
 main ul li{
-    font-family: 'Merriweather', serif;   
+    font-family: 'Merriweather', serif; 
+}
+main ul li img{
+    margin: 20px 0;
+}
+.logoimg{
+    width: 110px;
+    padding: 20px;
+}
+.logoimg{
+    margin-top: -20px;
 }
