@@ -1,0 +1,70 @@
+@media only screen and (min-width: 60em){
+  .navi{
+      padding: 0 18%;
+  }
+  main{
+      margin: 0 auto;
+      max-width: 760px;
+  }
+  .hero div{
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    width: 15em;
+    height: 15em;
+    padding: 1.10em;
+    margin: 25px 50px 25px 25px;
+}
+.s2{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.forecast{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.forecast img{
+    width: 80px;
+}
+article{
+    display: block;
+}
+.imgright{
+    width: 15rem;
+    height: 10rem;
+    margin-top: 20px;
+    padding: 10px;
+    float: right;
+}
+.smedia{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 10px;
+}
+.smedia img{
+    width: 40px;
+    margin-right: 10px;
+}
+.contact-info{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "map h3"
+    "map list"
+    "map smedia";
+    grid-gap: 5px;
+}
+.contact-info h3{
+    grid-area: h3;
+}
+.contact-info ul{
+    grid-area: list;
+}
+.map{
+    grid-area: map;
+}
+.smedia{
+    grid-area: smedia;
+}
+}

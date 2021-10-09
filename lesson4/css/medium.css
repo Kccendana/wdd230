@@ -1,0 +1,23 @@
+@media only screen and (min-width: 32.5em) {
+		header{
+			padding: 0 50% 0 10%;
+		}
+		.navi {
+			display: flex;
+			padding: 0 12%;
+			font-size: .9rem;
+		}
+		.navi li {
+			display: block; /* change state in small view */
+			flex: 1 1 auto;
+			
+		}
+		.navi a {
+			text-align: center;
+		}
+		.navi li:first-child {
+			display: none;
+		}
+		
+
+	}

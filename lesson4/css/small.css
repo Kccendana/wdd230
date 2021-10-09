@@ -1,0 +1,150 @@
+*{
+   box-sizing: border-box; 
+}
+:root{
+    --gradient: linear-gradient(90deg, #00B0F0, #00E5DC, #7EF9C1);
+    --color1: #00B0F0;
+    --color2: #00E5DC;
+    --color3: #7EF9C1;
+    --fontcolor: #182F2C;
+    --nav: linear-gradient(90deg, #7EF9C1, #00E5DC);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: var(--gradient);
+}
+header img{
+    width: 88px;
+    padding: 15px;
+}
+.head{
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+.moto {
+	font-style: italic;
+	font-size: .9rem;
+}
+header section h1{
+    margin: 0;
+}
+nav{
+    margin: 0;
+    background-image: var(--nav);
+    text-align: left;
+}
+.navi{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navi li:first-child {
+	display: block;
+}
+.navi li {
+	display: none;
+}
+.navi a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: var(--fontcolor);
+	font-weight: 600;
+	transition: 0.5s;
+}
+.navi a:hover {
+	color: white;
+	background-color: var(--color1);
+}
+.navi .active{
+    color: white;
+}
+.responsive li {
+	display: block;
+}
+h2, h3{
+    padding: .2em;
+    margin: 0;
+}
+
+main{
+    margin: 0;
+    display: block;
+    background-color: #E2FFFC;
+}
+main img{
+    width: 100%;
+    overflow: hidden;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+}
+.hero p{
+    margin: 0;
+}
+.hero h3{
+    margin: 10px 0;
+}
+.s2 h3{
+    background-color: var(--color3);
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+    text-align: center;
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: left;
+    grid-template-areas: 
+    "title"
+    "article"
+    "img";
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+}
+article h3{
+    grid-area: title;
+}
+article p{
+    grid-area: article;
+}
+article img{
+    grid-area: img;
+}
+footer img{
+    width: 100%;
+    overflow: hidden;
+}
+footer{
+    background-image: var(--gradient);
+    padding: 10px;
+}
+footer .contact-info ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 5px;
+    margin: 0;
+}
+footer .contact-info ul h3{
+    padding: 0;
+    margin: 0;
+}
+footer .footbar{
+    text-align: center;
+}
+.forecast{
+    display: none;
+}
+.smedia{
+    display: none;
+}
