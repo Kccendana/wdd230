@@ -8,7 +8,7 @@
 			font-size: .9rem;
 		}
 		.navi li {
-			display: block; /* change state in small view */
+			display: block;
 			flex: 1 1 auto;
 			
 		}
