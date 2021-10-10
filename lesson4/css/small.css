@@ -9,6 +9,10 @@
     --fontcolor: #182F2C;
     --nav: linear-gradient(90deg, #7EF9C1, #00E5DC);
 }
+img{
+    width: 100%;
+    overflow: hidden;
+}
 body{
     font-family: 'Montserrat', sans-serif;
 }
