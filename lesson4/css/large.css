@@ -63,7 +63,6 @@ article{
 }
 .map{
     grid-area: map;
-    width: 100
 }
 .smedia{
     grid-area: smedia;
