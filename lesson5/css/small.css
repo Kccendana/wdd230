@@ -18,30 +18,31 @@
  }
  header{
      display: flex;
-     justify-content: center;
+     justify-content: flex start;
      align-content: center;
      background-image: var(--gradient);
  }
  header img{
-     width: 88px;
-     padding: 15px;
+     width: 60px;
+     padding: 10px;
  }
  .head{
      display: flex;
      flex-direction: column;
      justify-content: center;
+     font-weight: 600;
+     font-family: 'Merriweather', serif;
  }
  .moto {
      font-style: italic;
-     font-size: .9rem;
+     font-size: .7rem;
  }
- header section h1{
-     margin: 0;
- }
+
+
  nav{
      margin: 0;
      background-image: var(--nav);
-     text-align: left;
+     
  }
  .navi{
      list-style: none;
@@ -73,9 +74,10 @@
  .responsive li {
      display: block;
  }
- h2, h3{
+ h1, h2, h3{
      padding: .2em;
      margin: 0;
+     font-family: 'Merriweather', serif;
  }
  
  main{
@@ -93,13 +95,30 @@
      padding: 10px;
      box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
  }
- .hero p{
-     margin: 0;
+ .hero div{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas: 
+     "title title"
+     "label1 currentWeather"
+     "label2 highTemp"
+     "label3 humidity"
+     "label4 windSpeed";
  }
  .hero h3{
-     margin: 10px 0;
+     margin: 5px 0;
      border-bottom: 1px solid;
+     grid-area: title;
+     place-items: center;
  }
+ .label1{grid-area: label1;}
+ .label2{grid-area: label2;}
+ .label3{grid-area: label3;}
+ .label4{grid-area: label4;}
+ .currentWeather{grid-area: currentWeather;}
+ .highTemp{grid-area: highTemp;}
+ .humidity{grid-area: humidity;}
+ .windSpeed{grid-area: windSpeed;}
  .s2 h3{
      background-color: var(--color3);
      padding: 10px;
@@ -148,17 +167,55 @@
 .footbar{
      text-align: center;
  }
- .forecast{
-     display: none;
- }
  .smedia{
      display: none;
  }
-.pan{
+#pansched{
     font-family: 'Helvetica', sans-serif;
     text-align: center;
     padding: 10px 25%;
     font-size: 1.25rem;
     background-color: #E2FFFC;
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+}
+
+.flex-col img{
+    width: 60px;
+    padding: .25rem;
+}
+.forecast{
+    display: none;
+}
+.flex-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.day-head{
+    font-weight: bold;
+	font-size: 1rem;
+    color: var(--fontcolor);
+}
+.flex-col{
+    border-right: none;
+    
+}
+.flex-col:nth-child(5){
+    border-bottom: none;
+}
+.flex-col:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+.temp {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+.resForecast{
+    display: block;
 }

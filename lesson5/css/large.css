@@ -1,7 +1,11 @@
 @media only screen and (min-width: 60em){
-    .navi{
-        padding: 0 18%;
+    header{
+        padding: 0 0 0 12%;
     }
+    .navi{
+        padding: 0 10%;
+    }
+    
     main{
         margin: 0 auto;
         max-width: 760px;
@@ -15,20 +19,16 @@
       margin: 25px 50px 25px 25px;
       box-shadow: 10px 10px 10px rgba(70, 69, 69, 0.2);
   }
+  .hero h3{
+      height: 25px;
+  }
+  
   .s2{
       display: grid;
       grid-template-columns: 1fr;
       box-shadow: 5px 5px 5px rgba(70, 69, 69, 0.2);
   }
-  .forecast{
-      display: flex;
-      justify-content: space-around;
-      padding: 20px;
-  }
-  .forecast img{
-      width: 80px;
-      box-shadow: 5px 5px 5px rgba(70, 69, 69, 0.2);
-  }
+
   article{
       display: block;
   }
@@ -74,4 +74,36 @@
   .smedia{
       grid-area: smedia;
   }
+  .forecast {
+	display: flex;
+    justify-content: space-between;
+    /*border-right: 1px solid #333;*/
+}
+
+.flex-col {
+	flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    /*border-bottom: 1px solid #333;
+	border-left: 1px solid #333;*/
+	text-align: center;
+    transition: transform .2s;
+	
+}
+.day-head {
+	display: block;
+	padding: 5px;
+	/*border-bottom: 1px solid #333;*/
+	text-align: center;
+    font-weight: 700;
+	font-size: 1rem;
+	color: var(--fontcolor);
+}
+
+img {
+	padding: 0.25rem;
+    width: 60px;
+}
+
+
   }

@@ -41,8 +41,16 @@ menuBtn.addEventListener('click', () =>
 
 window.onresize = () => {if (window.innerWidth > 760) mnav.classList.remove('responsive')};
 
+//toggle five-day forecast
+const res = document.querySelector(".res");
+const forecast = document.querySelector(".forecast");
+
+res.addEventListener("click", () =>
+{forecast.classList.toggle("resForecast")},false);
+
+window.onresize = () => {if (window.innerWidth > 760) forecast.classList.remove('resForecast')};
+
 //This javascript for the pancake invitation
-if (new Date().getDay() === 5){
-  document.getElementById("pansched").textContent = "Saturday =  🥞🍯Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.🌺";
+if (new Date().getDay() !== 5){
+  document.getElementById("pansched").style.display = "none";
 }
-document.getElementById("pansched").setAttribute("class", "pan")
