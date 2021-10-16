@@ -18,8 +18,8 @@
  }
  header{
      display: flex;
-     justify-content: start;
-     align-content: center;
+     justify-content: flex-start;
+     /*align-content: center;*/
      background-image: var(--gradient);
  }
  header img{
