@@ -18,7 +18,7 @@
  }
  header{
      display: flex;
-     justify-content: center;
+     justify-content: start;
      align-content: center;
      background-image: var(--gradient);
  }
