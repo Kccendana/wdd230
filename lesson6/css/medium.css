@@ -1,0 +1,19 @@
+@media only screen and (min-width: 32.5em) {
+  
+    .navi {
+        display: flex;
+        flex: auto;
+        font-size: .9rem;
+    }
+    .navi li {
+        display: block;
+        flex: 1 1 auto;
+        
+    }
+    .navi a {
+        text-align: center;
+    }
+    .navi li:first-child {
+        display: none;
+    }
+}
