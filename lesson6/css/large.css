@@ -1,23 +1,18 @@
-@media only screen and (min-width: 60em){
+@media only screen and (min-width:769px){
     header{
-        padding: 0 0 0 18%;
+        /*padding: 0 0 0 %;*/
         justify-content: flex-start;
     }
-    .navi{
-        padding: 0 17%;
-    }
-    
-    main{
-        margin: 0 auto;
-        max-width: 760px;
-    }
+  .head div{
+      font-size: 1.2rem;
+  }
     .hero div{
       background-color: rgba(255, 255, 255, 0.7);
       position: absolute;
-      width: 15em;
+      width: 16em;
       height: 15em;
-      padding: 1.10em;
-      margin: 25px 50px 25px 25px;
+      padding: .75em;
+      margin: 5%;
       box-shadow: 10px 10px 10px rgba(70, 69, 69, 0.2);
   }
   .hero h3{
@@ -34,9 +29,8 @@
       display: block;
   }
   .imgright{
-      width: 15rem;
-      height: 10rem;
-      margin-top: 20px;
+      width: 40%;
+      
       padding: 10px;
       float: right;
       box-shadow: 10px 10px 10px rgba(70, 69, 69, 0.2);
@@ -59,7 +53,9 @@
       "map h3"
       "map list"
       "map smedia";
-      column-gap: 10px;
+      column-gap: 20px;
+      box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+      clear: both;
   }
   .contact-info h3{
       grid-area: h3;

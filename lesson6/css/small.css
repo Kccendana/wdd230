@@ -15,10 +15,12 @@
  }
  body{
      font-family: 'Montserrat', sans-serif;
+     max-width: 960px;
+     margin: 0 auto;
+     background-color: #E2FFFC;
  }
  header{
      display: flex;
-     justify-content: center;
      align-content: center;
      background-image: var(--gradient);
  }
@@ -83,7 +85,7 @@
  main{
      margin: 0;
      display: block;
-     background-color: #E2FFFC;
+     
  }
  main img{
      width: 100%;
@@ -96,29 +98,35 @@
      box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
  }
  .hero div{
+     list-style: none;
      display: grid;
      grid-template-columns: 1fr 1fr;
      grid-template-areas: 
      "title title"
      "label1 currentWeather"
      "label2 highTemp"
-     "label3 humidity"
-     "label4 windSpeed";
+     "label3 windChill"
+     "label4 humidity"
+     "label5 windSpeed";
+     column-gap: 5px;
+
  }
  .hero h3{
      margin: 5px 0;
-     border-bottom: 1px solid;
      grid-area: title;
      place-items: center;
+     font-size: 1.25em;
  }
  .label1{grid-area: label1;}
  .label2{grid-area: label2;}
  .label3{grid-area: label3;}
  .label4{grid-area: label4;}
+ .label5{grid-area: label5;}
  .currentWeather{grid-area: currentWeather;}
  .highTemp{grid-area: highTemp;}
  .humidity{grid-area: humidity;}
  .windSpeed{grid-area: windSpeed;}
+ .windChill{grid-area: windChill;}
  .s2 h3{
      background-color: var(--color3);
      padding: 10px;
@@ -176,7 +184,7 @@
     padding: 10px 25%;
     font-size: 1.25rem;
     background-color: #E2FFFC;
-    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+    
 }
 
 .flex-col img{
@@ -206,8 +214,8 @@
     border-bottom: none;
 }
 .flex-col:hover{
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
     transform: scale(1.2); 
 }
 .temp {
