@@ -5,6 +5,7 @@ function preloadImage(img){
   if(!src){
     return;
   }
+  img.src = src;
   img.setAttribute('src', img.getAttribute('data-src'));
   img.onload = () => {
     img.removeAttribute('data-src');
