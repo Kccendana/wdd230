@@ -1,4 +1,4 @@
-const images = document.querySelectorAll("[data-src]");
+/* const images = document.querySelectorAll("[data-src]");
 
 function preloadImage(img){
   const src = img.getAttribute("data-src");
@@ -24,14 +24,11 @@ const imageObserver = new IntersectionObserver((entries, imageObserver) => {
   })
 }, imageOptions);
 
-images.forEach(image => {
+ images.forEach(image => {
   imageObserver.observe(image);
-})
+}) */
 
-
-//needs to changed and understand
-
-/*let imagesToLoad = document.querySelectorAll('img[data-src]');
+let imagesToLoad = document.querySelectorAll('img[data-src]');
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
   image.onload = () => {
@@ -39,23 +36,41 @@ const loadImages = (image) => {
   };
 };
 imagesToLoad.forEach((img) => {
+  loadImages(img);
+});
+
+if('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if(item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  });
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  imagesToLoad.forEach((img) => {
     loadImages(img);
   });
+}
 
-  if('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-      items.forEach((item) => {
-        if(item.isIntersecting) {
-          loadImages(item.target);
-          observer.unobserve(item.target);
-        }
-      });
+if('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if(item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
     });
-    imagesToLoad.forEach((img) => {
-      observer.observe(img);
-    });
-  } else {
-    imagesToLoad.forEach((img) => {
-      loadImages(img);
-    });
-  }*/
+  });
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+}
