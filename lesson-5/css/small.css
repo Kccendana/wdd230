@@ -261,6 +261,9 @@ figcaption{
 .gallery-container figure img[data-src] {
     filter: blur(0.2em);
 }
+figure{
+    margin: 0;
+}
 .dayVisited{
     text-align: center;
     font-size: 1.5rem;
