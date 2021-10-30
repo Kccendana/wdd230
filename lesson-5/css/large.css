@@ -111,7 +111,7 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
 }
-.gallery-container div{
+.gallery-container figure{
     width: 100%;
     box-shadow: 10px 10px 10px rgba(70, 69, 69, 0.2);
 }

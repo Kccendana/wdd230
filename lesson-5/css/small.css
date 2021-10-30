@@ -228,7 +228,7 @@
     display: block;
 }
 /*style for image-gallery*/
-.gallery-container div{
+.gallery-container figure{
     width: 320px;
     height: auto;
     background-image: var(--gradient);
@@ -247,18 +247,18 @@ figcaption{
     padding: 10px;
     text-align: center;
 }
-.gallery-container div img{
+.gallery-container figure img{
     border-radius: 10px;
 }
-.gallery-container div:hover{
+.gallery-container figure:hover{
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.5);
 }
 
-.gallery-container div img{
+.gallery-container figure img{
     filter: blur(0em);
     transition: 100ms filter;
 }
-.gallery-container div img[data-src] {
+.gallery-container figure img[data-src] {
     filter: blur(0.2em);
 }
 .dayVisited{
