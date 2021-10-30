@@ -1,15 +1,15 @@
 @media only screen and (min-width: 60em){
     header{
-        padding: 0 0 0 18%;
+        padding: 0 0 0 12%;
         justify-content: flex-start;
     }
     .navi{
-        padding: 0 17%;
+        padding: 0 10%;
     }
     
     main{
         margin: 0 auto;
-        max-width: 760px;
+        max-width: 960px;
     }
     .hero div{
       background-color: rgba(255, 255, 255, 0.7);
@@ -106,5 +106,13 @@ img {
     width: 60px;
 }
 
-
-  }
+.gallery-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+.gallery-container div{
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(70, 69, 69, 0.2);
+}
+}

@@ -39,8 +39,16 @@
      font-style: italic;
      font-size: .7rem;
  }
-
-
+ .headerNav{
+    position: relative;
+}
+.menuBtn{
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    font: .8rem;
+    padding: 5px;
+}
  nav{
      margin: 0;
      background-image: var(--nav);

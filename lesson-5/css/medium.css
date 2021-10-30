@@ -16,4 +16,8 @@
     .navi li:first-child {
         display: none;
     }
+    /*image-gallery*/
+    .gallery-container{
+        grid-template-columns: 1fr 1fr;
+    }
 }

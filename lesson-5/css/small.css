@@ -18,8 +18,8 @@
  }
  header{
      display: flex;
-     justify-content: center;
-     align-content: center;
+     justify-content: left;
+     align-content: left;
      background-image: var(--gradient);
  }
  header img{
@@ -38,7 +38,16 @@
      font-size: .7rem;
  }
 
-
+.headerNav{
+    position: relative;
+}
+.menuBtn{
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    font: .8rem;
+    padding: 5px;
+}
  nav{
      margin: 0;
      background-image: var(--nav);
@@ -218,4 +227,44 @@
 }
 .resForecast{
     display: block;
+}
+/*style for image-gallery*/
+.gallery-container div{
+    width: 320px;
+    height: auto;
+    background-image: var(--gradient);
+    position: relative;
+    padding: .5rem;
+    border-radius: 10px;
+}
+.gallery-container{
+    display: grid;
+    place-items: center;
+    row-gap: 15px;
+    padding: 20px;
+    
+}
+figcaption{
+    padding: 10px;
+    text-align: center;
+}
+.gallery-container div img{
+    border-radius: 10px;
+}
+.gallery-container div:hover{
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.5);
+}
+
+.gallery-container div img{
+    filter: blur(0em);
+    transition: 100ms filter;
+}
+.gallery-container div img[data-src] {
+    filter: blur(0.2em);
+}
+.dayVisited{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 10px;
+    font-weight: 700;
 }

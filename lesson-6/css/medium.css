@@ -16,4 +16,7 @@
     .navi li:first-child {
         display: none;
     }
+    .hero h3{
+        background-color: --color2;
+    }
 }
