@@ -42,22 +42,20 @@ const lastDate = localStorage.getItem("last-visit");
 
 if (lastDate == null){
     localStorage.setItem("last-visit", currentDateInMilli);
-}
+}else{
  
 const ld = parseFloat(lastDate);
 
 let days_ago = (currentDateInMilli - ld) / 86400000;
 let result = days_ago.toFixed(0);
-console.log(result);
 let message;
- if (result < 1){
-    message = "I can see it is your first time here. Welcome to the Gallery!"
- }else{
-     message = "It's been " + result + "days since you last visited this page."  
- }
-
+ if (result >= 1){
+  message = "It's been " + result + "days since you last visited this page."; 
+ }else{message = "Welcome to the Gallery!";}
+localStorage.setItem("last-visit", currentDateInMilli);
 document.querySelector('.dayVisited').innerHTML = message;
-
+console.log(ld);
+}
 
 //toggle nav
 const menuBtn = document.querySelector('.menuBtn');
