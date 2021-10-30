@@ -54,7 +54,7 @@ let message;
  }else{message = "Welcome to the Gallery!";}
 localStorage.setItem("last-visit", currentDateInMilli);
 document.querySelector('.dayVisited').innerHTML = message;
-console.log(ld);
+
 }
 
 //toggle nav
