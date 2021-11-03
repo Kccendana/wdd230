@@ -50,7 +50,7 @@ let days_ago = (currentDateInMilli - ld) / 86400000;
 let result = days_ago.toFixed(0);
 let message;
  if (result >= 1){
-  message = "It's been " + result + "days since you last visited this page."; 
+  message = "It's been " + result + " days since you last visited this page."; 
  }else{message = "Welcome to the Gallery!";}
 localStorage.setItem("last-visit", currentDateInMilli);
 document.querySelector('.dayVisited').innerHTML = message;

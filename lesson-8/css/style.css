@@ -1,0 +1,66 @@
+:root{
+    --border: #dadada;
+    --row2: #e7ffed;
+    --thead: #628ca6;
+    --headfoot: #7fb9c2;
+    --row1: #e7f0ed;
+
+}
+*{
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+table{
+    margin: 10% auto;
+    border: thin solid var(--border);
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px var(--thead);
+
+}
+tr:first-child th{
+    background-color: var(--headfoot);
+    padding: 10px; 
+    font-size: 1.25rem;
+    color: black;
+    
+}
+th, td {
+	padding: 7px;
+	border: 1px solid var(--border);
+
+}
+th{
+    background-color: var(--thead);
+    color: white;
+}
+td{
+    text-align: center;
+    
+}
+tbody tr:nth-child(even) {
+	background-color: var(--row2);
+}
+tbody tr:nth-child(odd) {
+	background-color: var(--row1);
+}
+#highlight{
+    color: white;background-color: var(--thead);
+}
+#italic{
+    font-style: italic;
+}
+tfoot td{
+    font-size: .75rem;
+    background-color: var(--headfoot);
+}
+@media only screen and (max-width: 324px){
+    thead tr:nth-child(2){
+        display: none;
+    }
+    tr, td{
+        display: block;
+    }
+    thead tr:first-child th{
+        display: block;
+    }
+}

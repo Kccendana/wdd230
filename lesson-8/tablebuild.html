@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a practice of making table in html.">
+    <title>ACME Wildwest</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">ACME Wildwest</th>
+            </tr>
+            <tr class="head">
+                <th scope="col">Period</th>
+                <th scope="col">Sales</th>
+                <th scope="col">Sales Goals</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >August</td>
+                <td>$3,590</td>
+                <td>$4,000</td>
+            </tr>
+            <tr>
+                <td >September</td>
+                <td>$4,420</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td >October</td>
+                <td>$4,870</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td >November</td>
+                <td>$8,610</td>
+                <td id="highlight">$7,500</td>
+            </tr>
+            <tr>
+                <td id="italic">Black Friday</td>
+                <td colspan="2">$3,200</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>$6,820</td>
+                <td>$7,500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+google: {
+families: [
+   'Ubuntu', 'sans-serif'
+]
+}
+});
+</script>
+</body>
+</html>
