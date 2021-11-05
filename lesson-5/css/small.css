@@ -229,7 +229,7 @@
 }
 /*style for image-gallery*/
 .gallery-container figure{
-    width: 320px;
+    width: 90%;
     height: auto;
     background-image: var(--gradient);
     position: relative;
@@ -241,6 +241,7 @@
     place-items: center;
     row-gap: 15px;
     padding: 20px;
+    position:relative;
     
 }
 figcaption{
@@ -248,16 +249,15 @@ figcaption{
     text-align: center;
 }
 .gallery-container figure img{
+    width: 100%;
     border-radius: 10px;
+    filter: blur(0em);
+    transition: 100ms filter;
 }
 .gallery-container figure:hover{
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.5);
 }
 
-.gallery-container figure img{
-    filter: blur(0em);
-    transition: 100ms filter;
-}
 .gallery-container figure img[data-src] {
     filter: blur(0.2em);
 }
