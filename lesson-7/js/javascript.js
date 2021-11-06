@@ -106,4 +106,3 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
  img.forEach(img => {
   imgObserver.observe(img);
 })
-

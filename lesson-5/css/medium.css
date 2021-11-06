@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 672px) {
   
     .navi {
         display: flex;
@@ -19,5 +19,30 @@
     /*image-gallery*/
     .gallery-container{
         grid-template-columns: 1fr 1fr;
+    }
+    /*storm center*/
+    .form-container{
+        flex-direction: row;
+    }
+    .side-image img{
+        display: block;
+    }
+    form fieldset label{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-content: flex-start;
+    }
+    input, 
+    textarea,
+    select{
+        flex-basis: 100%;
+    }
+    .label{
+        flex-basis: 10rem;
+    }
+    .radio{
+        display: flex;
+        flex-direction: row;
     }
 }
