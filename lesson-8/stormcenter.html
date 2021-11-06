@@ -83,14 +83,15 @@
             <option value="fishhaven">Fish Haven</option>
         </select>
     </label>
-    <div class="danger"><label>User Danger Level </label>
-        <input type="radio" name="dangerlevel" value="yes" checked>yes
-        <input type="radio" name="dangerlevel" value="maybe">maybe
-        <input type="radio" name="dangerlevel" value="no">no
+    <div class="danger">User Danger Level
+        <label><input type="radio" name="dangerlevel" value="maybe">maybe</label>
+        <label><input type="radio" name="dangerlevel" value="yes" checked>yes</label>
+        <label><input type="radio" name="dangerlevel" value="no">no</label>
     </div>
-        <label>Comments</label>
+        <label class="comment">Comments
         <textarea name="comment" id="info" cols="30" rows="8" placeholder="Please write here if you have any comments or additional information."></textarea>
-</fieldset>
+    </label>
+    </fieldset>
 <input class="inputBtn" type="submit" value="Report Weather">
 </form>
 </div>  

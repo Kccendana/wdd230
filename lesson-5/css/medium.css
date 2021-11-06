@@ -39,8 +39,21 @@
         flex-basis: 80%;
     }
     .danger{
+        margin-top: 10px;
+        font-weight: 600;
+
+    }
+    .danger label{
         display: block;
+        margin: 0;
         
     }
-    
+    .comment{
+      display: block;
+      align-items: left;
+      margin-top: 15px;
+    }
+    textarea{
+        width: 100%;
+    }
 }
