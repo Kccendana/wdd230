@@ -31,18 +31,16 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
     input, 
     textarea,
     select{
-        flex-basis: 100%;
+        flex-basis: 80%;
     }
-    .label{
-        flex-basis: 10rem;
+    .danger{
+        display: block;
+        
     }
-    .radio{
-        display: flex;
-        flex-direction: row;
-    }
+    
 }

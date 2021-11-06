@@ -272,24 +272,7 @@ figure{
 }
 /*Storm Center*/
 .form-container{
-    margin: 0 auto;
-    display: flex;
     padding: 10px;
-
-    
-
-}.side-image{
-    margin-right: 10px;
-    margin-top: 15px;
-}
-.side-image img{
-    padding: 0;
-    height: auto;
-    margin-right: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.5);
-    display: none;
-
 }
 form{
     width: 90%;
@@ -314,15 +297,17 @@ form fieldset input{
     margin: 5px;
     border-radius: 10px;
     border: none;
+    
 }
 form fieldset label{
     display: flex;
     flex-direction: column;
     margin-bottom: 7px; 
-}
-.label{
     font-weight: 600;
+    
+    
 }
+
 select{
     padding: 5px;
     border-radius: 10px;

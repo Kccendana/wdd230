@@ -42,16 +42,16 @@
 <form method="get" action="thanks.html">
 <fieldset class="pInfo">
     <legend>Person Information</legend>
-    <label><div class="label">Full Name*</div><input type="text" placeholder="Klimag Gator" name="fullname" pattern="[A-Za-z ]{5,}" required autofocus></label>
-    <label><div class="label">Email</div><input type="email" placeholder="abcde@klimagator.com"></label>
-    <label><div class="label">Phone*</div><input type="tel" placeholder="01234567890" required></label>
-    <label><div class="label">Zip Code*</div><input type="number" placeholder="012345" required></label>
+    <label class="label">Full Name*<input type="text" placeholder="Klimag Gator" name="fullname" pattern="[A-Za-z ]{5,}" required autofocus></label>
+    <label class="label">Email<input type="email" placeholder="abcde@klimagator.com"></label>
+    <label class="label">Phone*<input type="tel" placeholder="01234567890" required></label>
+    <label class="label">Zip Code*<input type="number" placeholder="012345" required></label>
 </fieldset>
 <!--Storm info-->
 <fieldset>
     <legend>Storm Information</legend>
-<label><div class="label">Storm Date</div><input type="date"></label>
-<label><div class="label">Storm Type </div><input list="stormtype" placeholder="Choose a type">
+<label>Storm Date<input type="date"></label>
+<label>Storm Type<input list="stormtype" placeholder="Choose a type">
     <datalist id="stormtype">
         <option value="Flash Flood">
         <option value="Hail">
@@ -59,7 +59,7 @@
         <option value="Thunderstorm">
         <option value="Tornado">
     </datalist></label>
-<label><div class="label">Storm Severity</div><span id="stormSeverity">5</span>
+<label>Storm Severity<span id="stormSeverity">5</span>
         <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
         
     <datalist id="tickmarks">
@@ -75,7 +75,7 @@
         <option value="9">
         <option value="10">
     </datalist></label>
-    <label><div class="label">Storm Region</div> 
+    <label>Storm Region 
         <select name="region" class="basicInput">
             <option disabled selected>Select Region</option>
             <option value="preston">Preston</option>
@@ -83,11 +83,12 @@
             <option value="fishhaven">Fish Haven</option>
         </select>
     </label>
-        <label><div class="label">User Danger Level</div> 
-        <div class="radio"><label><input type="radio" name="dangerlevel" value="yes" checked>yes</label>
-        <label><input type="radio" name="dangerlevel" value="maybe">maybe</label>
-        <label><input type="radio" name="dangerlevel" value="no">no</label></div></label>
-        <label><div class="label">Comments</div></label>
+    <div class="danger"><label>User Danger Level </label>
+        <input type="radio" name="dangerlevel" value="yes" checked>yes
+        <input type="radio" name="dangerlevel" value="maybe">maybe
+        <input type="radio" name="dangerlevel" value="no">no
+    </div>
+        <label>Comments</label>
         <textarea name="comment" id="info" cols="30" rows="8" placeholder="Please write here if you have any comments or additional information."></textarea>
 </fieldset>
 <input class="inputBtn" type="submit" value="Report Weather">
