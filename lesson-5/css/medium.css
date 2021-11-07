@@ -50,7 +50,7 @@
     }
     .comment{
       display: block;
-      align-items: left;
+      justify-items: left;
       margin-top: 15px;
     }
     textarea{
