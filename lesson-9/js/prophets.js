@@ -7,7 +7,35 @@ fetch(requestURL)
     .then(function (jsonObject) {
         const prophets = jsonObject['prophets'];
 
-        for (let i = 0; i < prophets.length; i++ ) {
+        prophets.forEach(prophets => {
+            console.log(prophets)
+            let card = document.createElement('section');
+            let h2 = document.createElement('h2');
+            let place = document.createElement('p');
+            let date = document.createElement('p');
+            let image = document.createElement('img');
+
+            h2.textContent = prophets.name + ' ' + prophets.lastname; 
+            date.textContent = 'Date of Birth: ' + prophets.birthdate;
+            place.textContent = 'Place of Birth: ' + prophets.birthplace;
+            image.setAttribute('src', prophets.imageurl);
+            image.setAttribute('loading', 'lazy');
+            image.setAttribute('alt', `${prophets.name} ${prophets.lastname}-${prophets.order}`);
+            //image.setAttribute('src', 'images/placeholder.jpg');
+            
+
+            
+            card.appendChild(h2);
+            card.appendChild(date);
+            card.appendChild(place);
+            card.appendChild(image);
+            
+            document.querySelector('div.cards').appendChild(card);
+
+
+        });
+      
+       /* for (let i = 0; i < prophets.length; i++ ) {
     
             let card = document.createElement('section');
             let h2 = document.createElement('h2');
@@ -30,9 +58,7 @@ fetch(requestURL)
             document.querySelector('div.cards').appendChild(card);
             
             //image.setAttribute('src', prophets[i].imageurl);
-            }
+            }*/
 
     });
-
-
 
