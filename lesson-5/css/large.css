@@ -1,14 +1,14 @@
 @media only screen and (min-width:769px){
 
     header{
-        padding: 0 0 0 12%;
+        /*padding: 0 0 0 12%;*/
         justify-content: flex-start;
     }
     .navi {
         display: flex;
         flex: auto;
         font-size: .9rem;
-        padding: 0 10%;
+    /* padding: 0 10%;*/
     }
     .navi li {
         display: block;

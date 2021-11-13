@@ -8,20 +8,20 @@ fetch(requestURL)
         const prophets = jsonObject['prophets'];
 
         prophets.forEach(prophets => {
-            console.log(prophets)
+            //console.log(prophets)
             let card = document.createElement('section');
             let h2 = document.createElement('h2');
             let place = document.createElement('p');
             let date = document.createElement('p');
             let image = document.createElement('img');
 
-            h2.textContent = prophets.name + ' ' + prophets.lastname; 
-            date.textContent = 'Date of Birth: ' + prophets.birthdate;
-            place.textContent = 'Place of Birth: ' + prophets.birthplace;
-            image.setAttribute('src', prophets.imageurl);
-            image.setAttribute('loading', 'lazy');
-            image.setAttribute('alt', `${prophets.name} ${prophets.lastname}-${prophets.order}`);
-            //image.setAttribute('src', 'images/placeholder.jpg');
+            h2.innerHTML = `${prophets.name} ${prophets.lastname}`; 
+            date.innerHTML = `Date of Birth: ${prophets.birthdate}`;
+            place.innerHTML = `Place of Birth: ${prophets.birthplace}`;
+            image.src =  prophets.imageurl;
+            image.loading = 'lazy'
+            image.alt =  `${prophets.name} ${prophets.lastname}-${prophets.order}`;
+           
             
 
             

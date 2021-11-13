@@ -75,11 +75,11 @@ fetch(townUrl)
     })
     .then(function (jsonObject){
         const towns = jsonObject['towns'];
-        console.table(towns)
+        //console.table(towns)
 
         const selectedTowns = towns.filter((town) =>town.name === 'Soda Springs' || 
         town.name === 'Fish Haven' || town.name === 'Preston');
-        console.log(selectedTowns);
+        //console.log(selectedTowns);
 
         selectedTowns.forEach(selected =>{
 
@@ -100,7 +100,7 @@ fetch(townUrl)
             let img;
             if (selected.name === 'Soda Springs'){
                 img = 'images/so.webp';
-                console.log(img)
+                //console.log(img)
             }
             if (selected.name === 'Fish Haven'){
                 img = 'images/fishhaven.webp';
