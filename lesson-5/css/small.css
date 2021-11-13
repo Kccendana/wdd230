@@ -71,6 +71,7 @@
      color: var(--fontcolor);
      font-weight: 600;
      transition: 0.5s;
+     font-size: 1.25rem;
  }
  .navi a:hover {
      color: white;
@@ -101,32 +102,42 @@
      display: flex;
      flex-direction: column;
      padding: 10px;
-     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+     
+ }
+ .hero img{
+    box-shadow: 10px 10px 10px rgba(121, 118, 118, 0.2);
  }
  .hero div{
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-areas: 
-     "title title"
-     "label1 currentWeather"
-     "label2 highTemp"
-     "label3 humidity"
-     "label4 windSpeed";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "title title"
+    "location city"
+    "label1 currentWeather"
+    "label2 highTemp"
+    "label3 windChill"
+    "label4 humidity"
+    "label5 windSpeed";
+    column-gap: 5px;
  }
- .hero h3{
+ .hero div h2{
      margin: 5px 0;
      border-bottom: 1px solid;
      grid-area: title;
      place-items: center;
  }
+ .location{grid-area: location;}
+ .city{grid-area: city;}
  .label1{grid-area: label1;}
  .label2{grid-area: label2;}
  .label3{grid-area: label3;}
  .label4{grid-area: label4;}
+ .label5{grid-area: label5;}
  .currentWeather{grid-area: currentWeather;}
  .highTemp{grid-area: highTemp;}
  .humidity{grid-area: humidity;}
  .windSpeed{grid-area: windSpeed;}
+ .windChill{grid-area: windChill;}
  .s2 h3{
      background-color: var(--color3);
      padding: 10px;
@@ -165,11 +176,11 @@
  .contact-info ul{
      list-style-type: none;
      text-align: left;
-     padding: 5px;
+     padding: 10px;
      margin: 0;
  }
- .contact-info ul h3{
-     padding: 0;
+ .contact-info h3{
+     padding: 10px;
      margin: 0;
  }
 .footbar{
@@ -335,4 +346,51 @@ textarea{
 .paragraph{
     margin: 0;
     font-size: 1.25rem;
+}
+/*homepage*/
+.towns{
+    padding: 10px;
+    
+}
+.towns section h3{
+text-align: center;
+}
+.towns section p:nth-child(2){
+    margin-top: 0;
+    font-size: .8rem;
+    margin-bottom: .8rem;
+    
+}
+.towns section{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    background-image: var(--gradient);
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+}
+.towns section p{
+    margin: .6rem;
+    font-size: .9rem;
+    text-align: center;
+}
+.towns section img{
+    margin-top: 10px;
+}
+.feat img{
+    width: 64px;
+    border-radius: 50%;
+}
+
+.feature{
+    display: block;
+}
+.feat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
 }

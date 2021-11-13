@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the page intended for individual to report the weather condition in their place so that Klimagator could assist them properly with safety precaution updates.">
+	<title>KlimaGator: Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../lesson-5/css/small.css">
+    <link rel="stylesheet" href="../lesson-5/css/medium.css">
+    <link rel="stylesheet" href="../lesson-5/css/large.css">
+    <script defer src="js/javascript.js"></script>
+</head>
+<body>
+    <div id ="pansched">Saturday =  🥞🍯Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.🌺"</div>
+    <div class="headerNav">
+    <header>
+            <img src="../lesson-5/images/kglogo.svg" alt="Klimagator logo">
+        <div class="head">
+            <div>KlimaGator</div>
+            <q class="moto">Your safety is our priority.</q>
+        </div>
+    </header>
+    <nav>
+        <ul class="navi">
+            <li><a class="menuBtn" href="#">&#9776; Menu</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="../lesson-5/preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson-7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+</div>
+<main>
+    <h1>Home</h1>
+        <section class="hero"> 
+            <picture>
+                <source srcset="images/herosmall.webp" media="(max-width:519px)">
+                    <source srcset="images/heromedium.webp" media="(max-width:768px)">
+                    <source srcset="images/herolarge.webp" media="(min-width:769px)">
+                    <img class="hero" src="images/herolarge.webp" alt="beautiful sunny day">
+            </picture>
+            <div><h2>Weather Summary</h2>
+                <span class="location">Location:</span><span class="city">Matsusaka</span>
+                <span class="label1">Currently:</span><span class="currentWeather">Sunny</span>
+                <span class="label2">High:</span><span class="highTemp">50 &deg;F</span> 
+                <span class="label3">Wind Chill:</span><span class="windChill">3</span>
+                <span class="label4">Humidity:</span><span class="humidity">72%</span>
+                <span class="label5">Wind Speed:</span><span class="windSpeed">4 mph</span>
+   
+           </div>
+        </section>
+
+        <div class="towns"></div>
+        <div class="feature">
+            <div class="feat">
+                <img src="images/preparation.png" alt="prepare icon">
+                <h3>Preparedness</h3>
+            </div>
+            <div class="feat"><img src="images/pandemic.png" alt="covid icon"><h3>Covid Update</h3></div>
+            <div class="feat"><img src="images/maps.png" alt="maps icon "> <h3>Safety and Risk Map</h3></div>
+            <div class="feat"><img src="images/weather-forecast.png" alt="weather icon"><h3>Weather Forecast</h3></div>
+        </div>
+        <section class="contact-info">
+            <h3>Contact Information</h3>
+            <ul>
+				<li>&#9742; (1234) 567-8888</li>
+				<li>&#9993; preston@klimagator.com</li>
+            </ul>
+            <img class="map" src="../lesson-6/images/matsusaka_map.webp" alt="map of matsusaka,japan"> 
+        <div class="smedia">
+            <a href="https://www.facebook.com/"><img src="../lesson-6/images/facebook.webp" alt="facebook icon"></a>
+            <a href="www.instagram.com"><img src="../lesson-6/images/instagram.webp" alt="instagram icon"></a>
+            <a href="https://twitter.com/?lang=en"><img src="../lesson-6/images/twitter.webp" alt="twitter icon"></a>
+        </div>    
+    </section
+</main>
+<footer>
+    <a href="wireframe.html">Home-wireframe</a>
+    <div class="footbar">
+    &copy; <span id="year"></span>| KlimaGator| Katherine Cendana <br>
+    <span id="currentDate"></span></div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+google: {
+families: [
+   'Merriweather', 'Montserrat'
+]
+}
+});
+</script>
+</body>
+</html>

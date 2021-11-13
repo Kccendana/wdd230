@@ -15,7 +15,7 @@
       margin: 5%;
       box-shadow: 10px 10px 10px rgba(70, 69, 69, 0.2);
   }
-  .hero h3{
+  .hero h{
       height: 25px;
   }
   
@@ -102,5 +102,4 @@ img {
     width: 60px;
 }
 
-
-  }
+}
