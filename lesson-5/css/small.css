@@ -18,13 +18,16 @@
      max-width: 960px;
      margin: 0 auto;
  }
+ .head div{
+     font-size: 1.25rem;
+ }
  header{
      display: flex;
      justify-content: left;
      background-image: var(--gradient);
  }
  header img{
-     width: 60px;
+     width: 65px;
      padding: 10px;
  }
  .head{
@@ -396,4 +399,9 @@ text-align: center;
     justify-content: center;
     margin: 10px;
     padding: 10px;
+}
+.feat a{
+    text-decoration: none;
+    color: black;
+    
 }
