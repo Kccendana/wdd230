@@ -46,7 +46,7 @@ tbody tr:nth-child(odd) {
 #highlight{
     color: white;background-color: var(--thead);
 }
-#italic{
+.italic{
     font-style: italic;
 }
 tfoot td{
