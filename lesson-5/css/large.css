@@ -29,15 +29,13 @@
     .hero div{
         background-color: rgba(255, 255, 255, 0.7);
         position: absolute;
-        width: 16em;
-        height: 15em;
-        padding: .75em;
+        width: 16rem;
+        height: 15rem;
+        padding: .75rem;
         margin: 5%;
         
   }
- .hero h2{
-      height: 35px;
-  }
+
   
   .s2{
       display: grid;
@@ -94,6 +92,9 @@
 	display: flex;
     justify-content: space-between;
     /*border-right: 1px solid #333;*/
+    font-size: 1.5rem;
+    width: 700px;
+    margin: 0 auto;
 }
 
 .flex-col {

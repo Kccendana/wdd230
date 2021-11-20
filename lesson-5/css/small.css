@@ -76,7 +76,7 @@
      color: var(--fontcolor);
      font-weight: 600;
      transition: 0.5s;
-     font-size: 1.25rem;
+     font-size: 1.1rem;
  }
  .navi a:hover {
      color: white;
@@ -112,42 +112,56 @@
  .hero img{
     box-shadow: 10px 10px 10px rgba(121, 118, 118, 0.2);
  }
+ .hero div span{
+     font-size: 1rem;
+ }
  .hero div{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "title title"
-    "location city"
     "label1 currentWeather"
     "label2 highTemp"
     "label3 windChill"
     "label4 humidity"
     "label5 windSpeed";
-    column-gap: 5px;
+    column-gap: 10px;
  }
  .hero div h2{
      margin: 5px 0;
      border-bottom: 1px solid;
      grid-area: title;
-     place-items: center;
+     text-align: center;
+     font-size: 1.45rem;
  }
- .location{grid-area: location;}
- .city{grid-area: city;}
+
  .label1{grid-area: label1;}
  .label2{grid-area: label2;}
  .label3{grid-area: label3;}
  .label4{grid-area: label4;}
  .label5{grid-area: label5;}
  .currentWeather{grid-area: currentWeather;}
- .highTemp{grid-area: highTemp;}
+ .temp{grid-area: highTemp;}
  .humidity{grid-area: humidity;}
  .windSpeed{grid-area: windSpeed;}
  .windChill{grid-area: windChill;}
+ .label1, 
+ .label2, 
+ .label3, 
+ .label4, 
+ .label5{
+     text-align: right;}
+.currentWeather,
+.humidity,
+.temp,
+.windChill,
+.windSpeed{text-align: left;}
  .s2 h3{
      background-color: var(--color3);
      padding: 10px;
      box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
      text-align: center;
+     font-size: 1.45rem;
  }
  article{
      display: grid;
@@ -205,7 +219,7 @@
 }
 
 .flex-col img{
-    width: 60px;
+    width: 100px;
     padding: .25rem;
 }
 .forecast{
@@ -217,6 +231,7 @@
     justify-content: space-around;
     text-align: center;
     align-items: center;
+    padding: 10px;
 }
 .day-head{
     font-weight: bold;
@@ -239,7 +254,6 @@
 	display: block;
 	padding: 0 5px 5px;
 	font-size: 0.8rem;
-	text-align: center;
 }
 .resForecast{
     display: block;

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forecast</title>
+    <style>
+ 
+.container{
+    margin: 10% auto;
+    max-width: 250px;
+    background-color: aquamarine;
+    padding: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    grid-template-areas: 
+    'h2 h2'
+    'temp location'
+    'temp condition'
+    'temp minmax'
+    'lhumidity humidity'
+    'lwindSpeed windSpeed'
+    'lwindChill windChill';
+}
+h2{grid-area: h2;
+text-align: center;
+margin: 10px;}
+#temp{grid-area: temp;
+font-size: 2rem;
+font-weight: 600;}
+#condition{grid-area: condition;}
+.minmax{grid-area: minmax;}
+#location{grid-area: location;}
+.lhumidity{grid-area: lhumidity;}
+.lwindSpeed{grid-area: lwindSpeed;}
+.lwindChill{grid-area: lwindChill;}
+#humidity{grid-area: humidity;}
+#windSpeed{grid-area: windSpeed;}
+#windChill{grid-area: windChill;}
+#temp,
+.lhumidity,
+.lwindSpeed,
+.lwindChill{
+    text-align: right;
+}
+.lhumidity,
+.lwindSpeed,
+.lwindChill{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.weekContainer{
+    display: flex;
+    flex-direction: row;
+  width: 500px;
+  margin: 0 auto;
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+img{
+    width: 80px;
+}
+    </style>
+    <script defer>
+
+const apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=a44cb97f9caa00ac7b9a9561a8379fe8';
+
+fetch(apiUrl)
+.then((response) => response.json())
+.then((jsObject) => {
+    console.log(jsObject);
+    
+    //console.log(jsObject.city)
+    console.log(jsObject.city.name);
+    const afternoon = jsObject.list.filter(time => time.dt_txt.includes('18:00:00'));
+    console.log(afternoon);
+
+    const temp = document.querySelector('#temp');
+    const condition = document.querySelector('#condition');
+    const humidity = document.querySelector('#humidity');
+    const windSpeed = document.querySelector('#windSpeed');
+    const minTemp = document.querySelector('#minTemp');
+    const maxTemp = document.querySelector('#maxTemp');
+    
+    let tempA = afternoon[0].main.temp.toFixed(0);
+    let speed = afternoon[0].wind.speed;
+    condition.textContent = afternoon[0].weather[0].description;
+    temp.textContent = `${tempA}°F`;
+    humidity.textContent = `${afternoon[0].main.humidity}%`;
+    windSpeed.textContent = `${speed}mph`;
+    maxTemp.textContent = `↑${afternoon[0].main.temp_max.toFixed(0)}°F`;
+    minTemp.textContent = ` ↓${afternoon[0].main.temp_min.toFixed(0)}°F`;
+    result = chill(tempA, speed);
+    
+    document.querySelector('#windChill').innerHTML = result;
+
+    function chill(tempA, speed){
+    if (tempA <= 50 && speed > 3){
+       wind = 35.74 + 0.6215 * tempA - 35.75 * 
+                Math.pow(speed, 0.16) + 0.4275 * tempA * Math.pow(speed, 0.16);
+        wind = wind.toFixed(0) + "&deg;F";        
+                return wind;
+    }else{return "N/A";}
+
+    }
+    const dayOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    let day = 0;
+    afternoon.forEach(forecast =>{
+        const imagesrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`; 
+        //console.log(forecast.weather[0].icon); // note the concatenation
+        let date = new Date(forecast.dt_txt);
+        document.querySelector(`#day${day + 1}`).textContent = dayOfWeek[date.getDay()];
+        document.querySelector(`#dayTemp${day + 1}`).textContent = forecast.main.temp + '°F';
+        document.querySelector(`#icon${day + 1}`).setAttribute('src', imagesrc);
+        day++;
+    });
+
+});
+    
+    </script>
+</head>
+<body>
+    <div class="container">
+<h2>Weather Summary</h2>
+<span id="location">Preston</span>
+<span id="condition">Sunny</span>
+<div class="minmax"><span id="maxTemp">&#8593;8 &deg;</span><span id="minTemp">&darr;6 &deg;</span></div>
+<span id="temp">7 &deg;</span>
+<span class="lhumidity">Humidity: </span><span id="humidity">25%</span>
+<span class="lwindSpeed">Wind Speed: </span><span id="windSpeed">4.7mph</span>
+<span class="lwindChill">Wind Chill: </span><span id="windChill">7.7 &deg;</span>
+    </div>
+    <div class="weekContainer">
+        <div class="day">
+            <div id="day1"></div>
+            <img src="" alt="" id="icon1">
+            <div id="dayTemp1"></div>
+        </div>
+        <div class="day">
+            <div id="day2"></div>
+            <img src="" alt="" id="icon2">
+            <div id="dayTemp2"></div>
+        </div>
+        <div class="day">
+            <div id="day3"></div>
+            <img src="" alt="" id="icon3">
+            <div id="dayTemp3"></div>
+        </div>
+        <div class="day">
+            <div id="day4"></div>
+            <img src="" alt="" id="icon4">
+            <div id="dayTemp4"></div>
+        </div>
+        <div class="day">
+            <div id="day5"></div>
+            <img src="" alt="" id="icon5">
+            <div id="dayTemp5"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

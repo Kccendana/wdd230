@@ -1,5 +1,9 @@
+
+
+
+//windchill
 window.addEventListener('DOMContentLoaded', () => {
-    let temp = parseFloat(document.querySelector(".highTemp").textContent);
+    let temp = parseFloat(document.querySelector(".temp").textContent);
     let wSpeed = parseFloat(document.querySelector(".windSpeed").textContent);
     let result = windChill(temp, wSpeed);
     
