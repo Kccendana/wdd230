@@ -84,7 +84,7 @@ fetch(apiUrl)
     const dayOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     let day = 0;
     afternoon.forEach(forecast =>{
-       let imagesrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`; 
+       let imagesrc = `../icon/${forecast.weather[0].icon}.png`; 
         let description = forecast.weather[0].description;
         console.log(forecast.weather[0].description);
         let date = new Date(forecast.dt_txt);
