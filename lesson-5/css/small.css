@@ -274,7 +274,7 @@
     flex-direction: column;
     padding: 1rem;
     background-color: var(--color1);
-    color: white;
+    color: var(--fontcolor);
 }
 .events span{
     margin: .25rem;
