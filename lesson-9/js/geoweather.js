@@ -41,7 +41,7 @@ function showError(error){
 function getWeather(latitude, longitude){
 //api key
 const key = 'a44cb97f9caa00ac7b9a9561a8379fe8';
-const apiURL = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${key}`;
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${key}`;
  
 
 
