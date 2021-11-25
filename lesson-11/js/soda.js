@@ -55,7 +55,7 @@ if (new Date().getDay() !== 5){
   document.getElementById("pansched").style.display = "none";
 }
 //api 
-const apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=a44cb97f9caa00ac7b9a9561a8379fe8';
+const apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=a44cb97f9caa00ac7b9a9561a8379fe8';
 
 fetch(apiUrl)
 .then((response) => response.json())
@@ -130,7 +130,7 @@ function windChill(temp, wSpeed){
       townEvent.appendChild(h3)
       
  
-      const selectedTown = towns.filter((town) =>town.name === 'Preston');
+      const selectedTown = towns.filter((town) =>town.name === 'Soda Springs');
       
       selectedTown[0].events.forEach(items =>{
         let lists = document.createElement('span');

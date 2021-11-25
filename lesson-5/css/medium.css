@@ -74,11 +74,5 @@
     .towns section img{grid-area: img;
     margin-top: 0;
     }
-    .feature{
-        display: flex;
-    }
-    .feat{
-       flex-direction: column;
-       text-align: center;
-    }
+    
 }

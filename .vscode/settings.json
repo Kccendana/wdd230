@@ -1,3 +1,4 @@
 {
-    "editor.codeLensFontFamily": "'cascadia code'"
+    "editor.codeLensFontFamily": "'cascadia code'",
+    "liveServer.settings.port": 5501
 }

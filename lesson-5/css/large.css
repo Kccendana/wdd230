@@ -29,10 +29,12 @@
     .hero div{
         background-color: rgba(255, 255, 255, 0.7);
         position: absolute;
-        width: 16rem;
+        width: 20rem;
         height: 15rem;
         padding: .75rem;
         margin: 5%;
+        box-shadow: 10px 10px 10px rgba(231, 226, 226, 0.5);
+        border-radius: 5px;
         
   }
 
@@ -41,15 +43,15 @@
       display: grid;
       grid-template-columns: 1fr;
       box-shadow: 5px 5px 5px rgba(70, 69, 69, 0.2);
+      
   }
 
   article{
       display: block;
   }
   .imgright{
-      width: 15rem;
-      height: 10rem;
-      margin-top: 20px;
+      width: 450px;
+      margin: 15px;
       padding: 10px;
       float: right;
       box-shadow: 10px 10px 10px rgba(70, 69, 69, 0.2);
@@ -62,7 +64,8 @@
   .smedia img{
       width: 40px;
       margin-right: 10px;
-      padding-left: 5px;
+      padding: 0;
+      box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
   }
   .contact-info{
       padding: 10px;
@@ -95,6 +98,7 @@
     font-size: 1.5rem;
     width: 700px;
     margin: 0 auto;
+    
 }
 
 .flex-col {
@@ -131,6 +135,7 @@ img {
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.5);
 }
 /*home*/
+
 .towns{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -140,11 +145,9 @@ img {
     grid-template-columns: 1fr;
 }
 .feature{
-    display: flex;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.feat{
+.feat a{
    flex-direction: column;
-   text-align: center;
 }
 }

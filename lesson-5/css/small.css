@@ -98,6 +98,7 @@
      margin: 0;
      display: block;
      background-color: #E2FFFC;
+     
  }
  main img{
      width: 100%;
@@ -129,10 +130,10 @@
  }
  .hero div h2{
      margin: 5px 0;
-     border-bottom: 1px solid;
      grid-area: title;
      text-align: center;
      font-size: 1.45rem;
+     grid-area: title;
  }
 
  .label1{grid-area: label1;}
@@ -162,6 +163,7 @@
      box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
      text-align: center;
      font-size: 1.45rem;
+     
  }
  article{
      display: grid;
@@ -171,14 +173,21 @@
      "title"
      "article"
      "img";
-     padding: 10px;
+     padding: 20px;
      box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+     margin: 10px auto;
+     background-color: #8bfff3;
+
  }
  article h3{
      grid-area: title;
+     font-size: 1.5rem;
  }
  article p{
      grid-area: article;
+     line-height: 1.5rem;
+     font-size: 1.1rem;
+     
  }
  article img{
      grid-area: img;
@@ -257,6 +266,18 @@
 }
 .resForecast{
     display: block;
+}
+.events{
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--color1);
+    color: white;
+}
+.events span{
+    margin: .25rem;
 }
 /*style for image-gallery*/
 .gallery-container figure{
@@ -368,6 +389,8 @@ textarea{
     font-size: 1.25rem;
 }
 /*homepage*/
+.notification{display: none;}
+
 .towns{
     padding: 10px;
     
@@ -398,24 +421,34 @@ text-align: center;
 .towns section img{
     margin-top: 10px;
 }
+
+.feature{
+    display: grid;
+    /*grid-template-columns: 1fr;*/
+}
+.feat h3{
+    grid-area: h3;
+    /*grid-column: 2/3;*/
+    font-size: 1.2rem;
+}  
 .feat img{
     width: 64px;
     border-radius: 50%;
-}
-
-.feature{
-    display: block;
+    /*grid-column: 1/2;*/
+    margin-right: 10px;
 }
 .feat{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 12px auto;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;*/
+    
+    
 }
 .feat a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    color: black;
-    
+    color: var(--fontcolor);
 }
