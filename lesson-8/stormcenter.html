@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the page intended for individual to report the weather condition in their place so that Klimagator could assist them properly with safety precaution updates.">
-	<title>KlimaGator: Storm Center</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="../lesson-5/images/kglogo1.svg">
+    <title>KlimaGator: Storm Center</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link rel="stylesheet" href="../css/normalize.css">
@@ -42,25 +43,25 @@
 <form method="get" action="thanks.html">
 <fieldset class="pInfo">
     <legend>Person Information</legend>
-    <label class="label">Full Name*<input type="text" placeholder="Klimag Gator" name="fullname" pattern="[A-Za-z ]{5,}" required autofocus></label>
-    <label class="label">Email<input type="email" placeholder="abcde@klimagator.com"></label>
-    <label class="label">Phone*<input type="tel" placeholder="01234567890" required></label>
-    <label class="label">Zip Code*<input type="number" placeholder="012345" required></label>
+    <div class="info"><label for="fname">Full Name*</label><input id="fname" type="text" placeholder="Klimag Gator" name="fullname" pattern="[A-Za-z ]{5,}" required autofocus></div>
+    <div class="info"><label for="email">Email</label><input id="email" type="email" placeholder="abcde@klimagator.com"></div>
+    <div class="info"><label for="phone">Phone*</label><input id="phone" type="tel" placeholder="01234567890" required></div>
+    <div class="info"><label for="zCode">Zip Code*</label><input id="zCode" type="number" placeholder="012345" required></div>
 </fieldset>
 <!--Storm info-->
 <fieldset>
     <legend>Storm Information</legend>
-<label>Storm Date<input type="date"></label>
-<label>Storm Type<input list="stormtype" placeholder="Choose a type">
+<div class="info"><label for="date">Storm Date</label><input id="date" type="date"></div>
+<div class="info"><label for="stormType">Storm Type</label><input id="stormType" list="stormtype" placeholder="Choose storm type">
     <datalist id="stormtype">
         <option value="Flash Flood">
         <option value="Hail">
         <option value="Hurricane">
         <option value="Thunderstorm">
         <option value="Tornado">
-    </datalist></label>
-<label>Storm Severity<span id="stormSeverity">5</span>
-        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+    </datalist></div>
+<div class="info"><label for="stormSeverity">Storm Severity</label><span id="stormRating">5</span>
+        <input type="range" id="stormSeverity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
         
     <datalist id="tickmarks">
         <option value="0">
@@ -74,23 +75,24 @@
         <option value="8">
         <option value="9">
         <option value="10">
-    </datalist></label>
-    <label>Storm Region 
-        <select name="region" class="basicInput">
+    </datalist></div>
+    <div class="info"><label for="stormRegion">Storm Region</label> 
+        <select id="stormRegion" name="region" class="basicInput">
             <option disabled selected>Select Region</option>
             <option value="preston">Preston</option>
             <option value="sodasprings">Soda Springs</option>
             <option value="fishhaven">Fish Haven</option>
-        </select>
-    </label>
+        </select></div>
+    
     <div class="danger">User Danger Level
-        <label><input type="radio" name="dangerlevel" value="maybe">maybe</label>
-        <label><input type="radio" name="dangerlevel" value="yes" checked>yes</label>
-        <label><input type="radio" name="dangerlevel" value="no">no</label>
+        <div class="radioSelect">
+        <div class="radioinfo"><input id="maybe" type="radio" name="dangerlevel" value="maybe"><label for="maybe">maybe</label></div>
+        <div class="radioinfo"><input id="yes" type="radio" name="dangerlevel" value="yes" checked><label for="yes">yes</label></div>
+        <div class="radioinfo"><input id="no" type="radio" name="dangerlevel" value="no"><label for="no">no</label></div>
     </div>
-        <label class="comment">Comments
-        <textarea name="comment" id="info" cols="30" rows="8" placeholder="Please write here if you have any comments or additional information."></textarea>
-    </label>
+    </div>
+        <div class="info"><label for="comment">Comments</label>
+        <textarea name="comment" id="comment" cols="30" rows="8" placeholder="Please write here if you have any comments or additional information."></textarea></div>
     </fieldset>
 <input class="inputBtn" type="submit" value="Report Weather">
 </form>
@@ -98,7 +100,7 @@
 </main>
 <footer>
     <div class="footbar">
-    &copy; <span id="year"></span>| KlimaGator| Katherine Cendana <br>
+    &copy; <span id="year"></span>| <a href="../lesson-11/attribution.html">Attributions</a>| Katherine Cendana <br>
     <span id="currentDate"></span></div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

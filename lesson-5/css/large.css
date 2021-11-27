@@ -32,7 +32,7 @@
         width: 20rem;
         height: 15rem;
         padding: .75rem;
-        margin: 5%;
+        margin: 8%;
         box-shadow: 10px 10px 10px rgba(231, 226, 226, 0.5);
         border-radius: 5px;
         
@@ -142,7 +142,8 @@ img {
     column-gap: 15px;
 }
 .towns section{
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
 }
 .feature{
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -150,4 +151,7 @@ img {
 .feat a{
    flex-direction: column;
 }
+
+/*storm center*/
+
 }

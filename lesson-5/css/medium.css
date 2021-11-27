@@ -1,4 +1,4 @@
-@media only screen and (min-width: 426px) and (max-width:768px) {
+@media only screen and (min-width: 426px){
   
   
     /*image-gallery*/
@@ -6,41 +6,21 @@
         grid-template-columns: 1fr 1fr;
     }
     /*storm center*/
-    .form-container{
+    .info{
         flex-direction: row;
     }
-    .side-image img{
-        display: block;
+    label{
+        flex-basis: 9rem;
+        flex-grow: 0;
+        flex-shrink: 0;
     }
-    form fieldset label{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-    }
-    input, 
-    textarea,
-    select{
-        flex-basis: 80%;
-    }
-    .danger{
-        margin-top: 10px;
-        font-weight: 600;
-
-    }
-    .danger label{
-        display: block;
-        margin: 0;
-        
-    }
-    .comment{
-      display: block;
-      justify-items: left;
-      margin-top: 15px;
-    }
-    textarea{
+    input{
         width: 100%;
     }
+    .inputBtn{
+        width: 9rem;
+    }
+    
     /*home*/
     .towns section{
         grid-template-columns: 1fr 1fr;

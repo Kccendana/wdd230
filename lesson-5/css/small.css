@@ -108,6 +108,7 @@
      display: flex;
      flex-direction: column;
      padding: 10px;
+     position: relative;
      
  }
  .hero img{
@@ -273,8 +274,9 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    background-color: var(--color1);
+    background-color: var(--color3);
     color: var(--fontcolor);
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
 }
 .events span{
     margin: .25rem;
@@ -320,55 +322,60 @@ figure{
     font-weight: 700;
 }
 /*Storm Center*/
-.form-container{
+form {
     padding: 10px;
 }
-form{
-    width: 90%;
-}
-form fieldset legend{
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-form fieldset{
-    padding: 15px;
-    margin-bottom: 15px;
-    display:flex;
-    flex-direction: column;
+fieldset {
     border-radius: 10px;
-    background-image: var(--nav);
-    width: 100%;
-    border: none;
-    
-}
-form fieldset input{
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
-    border: none;
-    
-}
-form fieldset label{
     display: flex;
     flex-direction: column;
-    margin-bottom: 7px; 
+    margin-bottom: 15px;
+    flex-basis: 100%;
+    background-image: var(--nav);
+    border: none;
+}
+fieldset legend {
+    font-size: 1.6rem;
     font-weight: 600;
-    
-    
 }
-
-select{
+.info{
+    display: flex;
+    flex-direction: column;
+}
+input {
+    font-size: 1rem;
     padding: 5px;
-    border-radius: 10px;
     border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
-select option{
-    font-size: 1.3rem;
-}
-textarea{
+.info select {
+    padding: 5px;
     border: none;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.radioSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.radioSelect .radioinfo {
+    flex-direction: row;
+    
+}
+.radioinfo label{
+    font-weight: 400;
+}
+.danger{
+    margin: 10px 0;
+    font-weight: 600;
+}
+.radioSelect input{
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
 }
 .inputBtn{
     padding: 10px;
@@ -376,9 +383,19 @@ textarea{
     background-image: var(--nav);
     border: none;
     border-radius: 10px;
-    
 }
-
+textarea{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+label{
+    font-weight: 600;
+}
+#stormRating{
+    margin-right: 10px;
+}
 /*thans.html*/
 .thanks, .paragraph{
     text-align: center;
@@ -412,6 +429,7 @@ text-align: center;
     margin-top: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+    
 }
 .towns section p{
     margin: .6rem;
@@ -420,6 +438,7 @@ text-align: center;
 }
 .towns section img{
     margin-top: 10px;
+
 }
 
 .feature{
@@ -451,4 +470,19 @@ text-align: center;
     align-items: center;
     text-decoration: none;
     color: var(--fontcolor);
+}
+
+/*Attributions*/
+.at-container{
+    padding: 15px;
+    display: flex;
+}
+.at-container section{
+    flex-basis: 100%;
+    font-size: 1.2rem;
+    background-image: var(--gradient);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
 }

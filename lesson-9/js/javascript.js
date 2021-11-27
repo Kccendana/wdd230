@@ -81,14 +81,14 @@ fetch(townUrl)
 
             let img;
             if (selected.name === 'Soda Springs'){
-                img = 'images/so.webp';
+                img = 'images/so.jpg';
                 //console.log(img)
             }
             if (selected.name === 'Fish Haven'){
-                img = 'images/fishhaven.webp';
+                img = 'images/fishhaven.jpg';
             }
             if (selected.name === 'Preston')
-                img = 'images/preston.webp';
+                img = 'images/preston.jpg';
 
             image.setAttribute('src', img);
             image.setAttribute('loading', 'lazy');

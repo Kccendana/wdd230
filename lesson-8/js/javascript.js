@@ -50,5 +50,5 @@ if (new Date().getDay() !== 5){
 
 //for storm severity
 function adjustRating(rating) {
-    document.getElementById("stormSeverity").innerHTML = rating;
+    document.getElementById("stormRating").innerHTML = rating;
   }

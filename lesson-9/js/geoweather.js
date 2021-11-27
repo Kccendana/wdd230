@@ -51,8 +51,6 @@ fetch(apiURL)
         return data;
     })
     .then(function(data){
-        console.log(weather)
-        console.log(data);
         weather.humidity = data.main.humidity;
         weather.wind = Math.floor(data.wind.speed);
         weather.temperature = Math.floor(data.main.temp);
