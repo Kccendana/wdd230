@@ -11,6 +11,7 @@
  }
  img{
      width: 100%;
+     height: auto;
      overflow: hidden;
  }
  body{
@@ -28,6 +29,7 @@
  }
  header img{
      width: 65px;
+     height: auto;
      padding: 10px;
  }
  .head{
@@ -411,6 +413,7 @@ label{
 .towns{
     padding: 10px;
     
+    
 }
 .towns section h3{
 text-align: center;
@@ -438,7 +441,6 @@ text-align: center;
 }
 .towns section img{
     margin-top: 10px;
-
 }
 
 .feature{
@@ -452,6 +454,7 @@ text-align: center;
 }  
 .feat img{
     width: 64px;
+    height: auto;
     border-radius: 50%;
     /*grid-column: 1/2;*/
     margin-right: 10px;
