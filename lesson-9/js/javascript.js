@@ -91,7 +91,7 @@ fetch(townUrl)
                 img = 'images/preston.webp';
 
             image.setAttribute('src', img);
-            image.setAttribute('loading', 'lazy');
+           //image.setAttribute('loading', 'lazy');
             image.setAttribute('alt', `${selected.name} image`);
 
             section.appendChild(h3);

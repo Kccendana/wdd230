@@ -29,6 +29,7 @@
  }
  header img{
      width: 65px;
+     height: auto;
      padding: 10px;
  }
  .head{
@@ -444,6 +445,37 @@ text-align: center;
     max-height: 214px;
 }
 
+.feature{
+    display: grid;
+    /*grid-template-columns: 1fr;*/
+}
+.feat h3{
+    grid-area: h3;
+    /*grid-column: 2/3;*/
+    font-size: 1.2rem;
+}  
+.feat img{
+    width: 64px;
+    height: auto;
+    border-radius: 50%;
+    /*grid-column: 1/2;*/
+    margin-right: 10px;
+}
+.feat{
+    margin: 12px auto;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;*/
+    
+    
+}
+.feat a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--fontcolor);
+}
 
 /*Attributions*/
 .at-container{

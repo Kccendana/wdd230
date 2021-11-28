@@ -1,0 +1,58 @@
+@media only screen and (min-width: 426px){
+  
+  
+    /*image-gallery*/
+    .gallery-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    /*storm center*/
+    .info{
+        flex-direction: row;
+    }
+    label{
+        flex-basis: 9rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    input{
+        width: 100%;
+    }
+    .inputBtn{
+        width: 9rem;
+    }
+    
+    /*home*/
+    .towns section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "h3 img"
+        "motto img"
+        "yrFound img"
+        "population img"
+        "rain img";
+        column-gap: 10px;
+        
+    }
+    .towns section:nth-child(even){
+        grid-template-areas: 
+        "img h3"
+        "img motto"
+        "img yrFound"
+        "img population"
+        "img rain";
+
+    }
+    .towns section h3{grid-area: h3;
+    font-size: 1.2rem;}
+    .towns section p{font-size: 1rem;
+    margin: 0;}
+    .towns section p:nth-child(2){grid-area: motto;
+    font-size: .9rem;}
+    .towns section p:nth-child(3){grid-area: yrFound;}
+    .towns section p:nth-child(4){grid-area: population;}
+    .towns section p:nth-child(5){grid-area: rain;}
+    .towns section img{grid-area: img;
+    margin-top: 0;
+    }
+    
+}

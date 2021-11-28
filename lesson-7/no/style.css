@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    place-items: center;
+    background-image: linear-gradient(to right, #de6262, 
+    #e87869, #f08e72, #f8a37e, #ffb88c);
+}
+h1{
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+img{
+    margin-bottom: .5rem;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+img {
+    filter: blur(0em);
+    transition: 100ms filter;
+}
+img[data-src] {
+    filter: blur(0.2em);
+}
