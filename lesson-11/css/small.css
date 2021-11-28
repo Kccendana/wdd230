@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box; 
  }
@@ -196,7 +197,8 @@
      grid-area: img;
  }
  .map{
-     width: 100%;
+     width: 438px;
+     height: auto;
      overflow: hidden;
      padding: 10px;
  }

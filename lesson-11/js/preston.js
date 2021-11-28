@@ -60,12 +60,9 @@ const apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&unit
 fetch(apiUrl)
 .then((response) => response.json())
 .then((jsObject) => {
-    //console.log(jsObject);
     
-    //console.log(jsObject.city)
-    //console.log(jsObject.city.name);
     const afternoon = jsObject.list.filter(time => time.dt_txt.includes('18:00:00'));
-    //console.log(afternoon);
+    
 
     const temp = document.querySelector('.temp');
     const condition = document.querySelector('.currentWeather');
@@ -85,9 +82,9 @@ fetch(apiUrl)
     const dayOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     let day = 0;
     afternoon.forEach(forecast =>{
-       let imagesrc = `../icon/${forecast.weather[0].icon}.png`; 
+       let imagesrc = `images/icon/${forecast.weather[0].icon}.png`; 
         let description = forecast.weather[0].description;
-        //console.log(forecast.weather[0].icon);
+       
         let date = new Date(forecast.dt_txt);
 
         document.querySelector(`.day${day + 1}`).textContent = dayOfWeek[date.getDay()];

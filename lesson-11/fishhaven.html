@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the Fish page of Weather Site. This site updates with evry information you need to know about Fish Haven. This will help you be updated with upcoming events and weather.">
-    <link rel="icon" type="image/png" sizes="32x32" href="../lesson-5/images/kglogo1.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/kglogo.svg">
     <title>KlimaGator: Fish Haven Page</title>
-    <link rel="stylesheet" href="../lesson-5/css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../lesson-5/css/small.css">
-    <link rel="stylesheet" href="../lesson-5/css/medium.css">
-    <link rel="stylesheet" href="../lesson-5/css/large.css">
-    <script defer src="js/fishhaven.js"></script>  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" media="all">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width: 426px)">
+    <link rel="stylesheet" href="css/large.css" media="(min-width:769px)">
+
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+
 </head>
 <body>
     <div id ="pansched">Saturday =  🥞🍯Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.🌺"</div>
     <div class="headerNav">
     <header>
-            <img src="../lesson-5/images/kglogo.svg" alt="Klimagator logo">
+            <img src="images/kglogo.svg" alt="Klimagator logo" height="50" width="50">
         <div class="head">
             <div>KlimaGator</div>
             <q class="moto">Your safety is our priority.</q>
@@ -27,12 +29,12 @@
     <nav>
         <ul class="navi">
             <li><a class="menuBtn" href="#">&#9776; Menu</a></li>
-            <li><a href="../lesson-9/index.html">Home</a></li>
-            <li><a href="../lesson-10/preston-10.html">Preston</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="soda-springs.html">Soda Springs</a></li>
             <li><a class="active" href="fishhaven.html">Fish Haven</a></li>
-            <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
-            <li><a href="../lesson-7/gallery-7.html">Gallery</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 </div>
@@ -40,10 +42,10 @@
         <h1>Fish Haven</h1>
         <section class="hero"> 
             <picture>
-                <source srcset="images/fish-s.jpg" media="(max-width:450px)">
-                    <source srcset="images/fish-m.jpg" media="(max-width:768px)">
-                    <source srcset="images/fish-l.jpg" media="(min-width:769px)">
-                    <img class="hero" src="images/fish-l.jpg" alt="sunny day in the water">
+                <source srcset="images/fish-s.jpg" media="(max-width:450px)" height="183" width="450">
+                    <source srcset="images/fish-m.jpg" media="(max-width:768px)" height="317" width="780">
+                    <source srcset="images/fish-l.jpg" media="(min-width:769px)" height="383" width="946">
+                    <img class="hero" src="images/fish-l.jpg" alt="sunny day in the water" height="383" width="946">
             </picture>
             <div><h2>Weather Summary</h2>
                 <span class="label1">Currently:</span><span class="currentWeather">Sunny</span>
@@ -59,33 +61,33 @@
             <div class="forecast">
                 <div class="flex-col">
                     <span class="day1">Monday</span>
-                    <img id="icon1" src="../lesson-5/images/sunny.svg" alt="sunny svg image">
+                    <img id="icon1" src="images/icon/10d.png" alt="sunny svg image"  width="100" height="100">
                     <span class="temp1">75&deg;F</span>
                 </div>
                 <div class="flex-col">
                     <span class="day2">Tuesday</span>
-                    <img id="icon2" src="../lesson-5/images/suncloud.svg" alt="sunny cloudy">
+                    <img id="icon2" src="images/icon/10d.png" alt="sunny cloudy"  width="100" height="100">
                     <span class="temp2">73&deg;F</span>
                 </div>
                 <div class="flex-col">
                     <span class="day3">Wednesday</span>
-                    <img id="icon3" src="../lesson-5/images/littlerain.svg" alt="little rain">
+                    <img id="icon3" src="images/icon/10d.png" alt="little rain"  width="100" height="100">
                     <span class="temp3">70&deg;F</span>
                 </div>
                 <div class="flex-col">
                     <span class="day4">Thursday</span>
-                    <img id="icon4" src="../lesson-5/images/rain.svg" alt="rain">
+                    <img id="icon4" src="images/icon/10d.png" alt="rain"  width="100" height="100">
                     <span class="temp4">74&deg;F</span>
                 </div>
                 <div class="flex-col">
                     <span class="day5">Friday</span>
-                    <img id="icon5" src="../lesson-5/images/sunsnow.svg" alt="sun and snow">
+                    <img id="icon5" src="images/icon/10d.png" alt="sun and snow"  width="100" height="100">
                     <span class="temp5">75&deg;F</span>
                 </div>   
             </div>
         </section>
         <article><h3>Fish Haven Christmas Tree Lighting Set for Dec 1st</h3>
-        <img class="imgright" src="images/christ.jpg" alt="christmas decor">
+        <img class="imgright" src="images/christ.jpg" alt="christmas decor"  width="500" height="333">
         <div class="p"><p>Organizers announce details for the annual event, including gingerbread house decorating, gift-wrapping contest, amusement rides, food trucks, and more. </p>
             <p>The annual lighting of the Christmas tree on Fish Haven for the first time in two years of pandemic and isolation will illuminate the venue this year on the first of December. With 5 million twinkling lights, highlighting the largest light displays in the city. On the Main Road, the entire section will be closed for the events from 5 p.m. The grand stage presents Idaho personalities with Aaron Paul as the special guest. </p>
             <p>In addition to rides and holiday shopping, Blu Ice Gardens features "The Winter Escapade," an ice-skating show, a Santa's workshop, and a Christmas Town Express train. Thrill-seekers can jump on the Tuyokern Flyer pendulum ride, giving a Reindeer-worthy view of the 5 million lights below. Come and ride with us!! </p>
@@ -102,19 +104,29 @@
 				<li>&#9742; (1234) 567-8888</li>
 				<li>&#9993; preston@klimagator.com</li>
             </ul>
-            <img class="map" src="../lesson-5/images/matsusaka_map.jpg" alt="map of matsusaka,japan"> 
-        <div class="smedia">
-            <a href="https://www.facebook.com/"><img src="../lesson-5/images/facebook.png" alt="facebook icon"></a>
-            <a href="www.instagram.com"><img src="../lesson-5/images/instagram.png" alt="instagram icon"></a>
-            <a href="https://twitter.com/?lang=en"><img src="../lesson-5/images/twitter.png" alt="twitter icon"></a>
-        </div>    
+            <img class="map" src="images/matsusaka_map.webp" alt="map of matsusaka,japan" width="408" height="136"> 
+            <div class="smedia">
+                <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook icon"  width="50" height="50"></a>
+                <a href="www.instagram.com"><img src="images/instagram.webp" alt="instagram icon"  width="50" height="50"></a>
+                <a href="https://twitter.com/?lang=en"><img src="images/twitter.webp" alt="twitter icon"  width="50" height="50"></a>
+            </div>    
     </section>
 </main>
     <footer>
         <div class="footbar">
-        &copy; <span id="year"></span>| <a href="../lesson-11/attribution.html">Attributions</a>| Katherine Cendana <br>
+        &copy; <span id="year"></span>| <a href="attribution.html">Attributions</a>| Katherine Cendana <br>
         <span id="currentDate"></span></div>
     </footer>
-    <script src="../lesson-6/js/windchill.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+google: {
+families: [
+   'Merriweather', 'Montserrat'
+]
+}
+});
+</script>
+    <script src="js/fishhaven.js"></script>  
 </body>
 </html>
