@@ -123,6 +123,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "title title"
+    "notification notification"
     "label1 currentWeather"
     "label2 highTemp"
     "label3 windChill"
@@ -137,7 +138,7 @@
      font-size: 1.45rem;
      grid-area: title;
  }
-
+.notification{grid-area: notification;}
  .label1{grid-area: label1;}
  .label2{grid-area: label2;}
  .label3{grid-area: label3;}
@@ -416,10 +417,11 @@ label{
 }
 .towns section h3{
 text-align: center;
+
 }
 .towns section p:nth-child(2){
     margin-top: 0;
-    font-size: .8rem;
+    font-size: .7rem;
     margin-bottom: .8rem;
     
 }
@@ -431,11 +433,12 @@ text-align: center;
     margin-top: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
+    text-align: center;
     
 }
 .towns section p{
     margin: .6rem;
-    font-size: .9rem;
+    font-size: .6rem;
     text-align: center;
 }
 .towns section img{
