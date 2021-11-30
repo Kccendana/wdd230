@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box; 
  }
@@ -117,7 +118,7 @@
     box-shadow: 10px 10px 10px rgba(121, 118, 118, 0.2);
  }
  .hero div span{
-     font-size: 1rem;
+     font-size: 1.2rem;
  }
  .hero div{
     display: grid;
@@ -196,7 +197,8 @@
      grid-area: img;
  }
  .map{
-     width: 100%;
+     width: 438px;
+     height: auto;
      overflow: hidden;
      padding: 10px;
  }
@@ -420,7 +422,7 @@ text-align: center;
 }
 .towns section p:nth-child(2){
     margin-top: 0;
-    font-size: .8rem;
+    font-size: .75rem;
     margin-bottom: .8rem;
     
 }
