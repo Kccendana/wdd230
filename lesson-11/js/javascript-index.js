@@ -180,7 +180,7 @@ function displayWeather(){
     currentWeather.innerHTML = weather.description;
     locationEle.innerHTML = `${weather.city}, ${weather.country}`;
     humidity.innerHTML =`${weather.humidity}%`;
-    wSpeed.innerHTML = `${weather.temperature}°F`;
+    wSpeed.innerHTML = `${weather.temperature}mph`;
 }
 
 function windChill(temp, wSpeed){
