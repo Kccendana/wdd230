@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --gradient1: radial-gradient(circle, #009ffd, #2480db, #2d62b8, #2e4595, #2a2a72);
+    --color2: #EFFAFF; 	
+    --nav: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    --color4: rgb(0,94,184);
+    --color5: rgba(249,66,58, 0.7);
+    --overlay: radial-gradient(circle,rgba(42,42,114, 0.7),rgba(42,42,114, 0.7));
+
+}
+h1, h2, h3, h4{
+    font-family: 'Raleway', sans-serif;
+}
+img{
+    width: 100%;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    min-width: 320px;
+    background-color: var(--color2);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.head div{
+    font-size: 1.25rem;
+}
+header{
+    display: flex;
+    justify-content: left;
+    background-image: var(--gradient1);
+    padding: 10px;
+}
+header img{
+    width: 65px;
+    padding: 10px;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.moto {
+    font-style: italic;
+    font-size: .7rem;
+}
+
+.headerNav{
+   position: relative;
+}
+.menuBtn{
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   font: .8rem;
+
+}
+nav{
+    margin: 0;
+    background-image: var(--nav);
+    
+}
+.navi{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navi li:first-child {
+    display: block;
+}
+.navi li {
+    display: none;
+}
+.navi a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+.navi li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+    
+}
+
+.navi li:hover::after{
+    width: 100%;
+}
+
+.navi .active{
+    color: #f44336;
+}
+.responsive li {
+    display: block;
+}
+footer{
+    background-image: var(--gradient1);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    min-width: 342px;
+    clear: both;
+}
+footer a{
+    color: white;
+}
+.contact-info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 30px;
+}
+.con-title{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.socialM{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.copy{
+    padding: 3% 0;
+}
+.c-container{
+    align-items: center;
+    display: block;
+}
+contact-info span,
+.con-title{
+    padding: 10px;
+}
+.hero-sub{
+    background-image: var(--overlay), url(../images/contact-banner.avif);
+    width: 100%;
+    min-height: 30vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.sub-title{
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    top: 35%;
+    left: 5%;
+}
+/*home*/
+/*matsusaka*/
+/*directory*/
+.directory{
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 10px;
+    
+}
+.directory section h2{
+    font-size: 1rem;
+    text-align: left;
+}
+.directory section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid var(--color2);
+    align-items: left;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    border-radius: 10px;
+    width: 300px;
+   margin: 0 auto;
+}
+.directory section img{
+   place-self: center;
+}
+.listview{
+    display: grid;
+    grid-template-columns: 1fr;
+   width: 100%;
+   margin: 0 auto;
+}
+.listview section{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: left;  
+}
+
+.listview section h2{
+    margin-left: 20px;
+    
+}
+.gridview section h2{
+    margin-top: 20px;
+}
+.view{
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    width: 300px;
+    font-size: .7rem;
+}
+.list{
+    display: none;
+}
+.grid,
+.list{
+    cursor: pointer;
+}
+/*contact*/
+.section-sub{
+    width: 100%;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    min-height: 60vh;
+    /*background-color: var(--border-color);*/
+}
+.section-sub h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.board{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.board div{
+    flex-basis: 32%;
+    
+}
+.board div img{
+    margin: 10px auto;
+}
+.board div{
+    text-align: center;
+    background-image: var(--nav);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+} 
+.chair-p{
+    font-size: .8rem;
+}
+.chair-n{
+    font-size: 1rem;
+}
+.section-form{
+    background-image: linear-gradient(var(--color5), var(--color5)), url(../images/sub-form.avif);
+    color: white;
+}
+.section-form h3{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+textarea{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    
+}
+form{
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+}
+/*.info label{
+    display: none;
+}*/
+.inputBtn{
+    padding: 10px;
+    font-weight: 600;
+    background-image: var(--nav);
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 5px;
+}
+input{
+    font-size: 1rem;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+input:focus{
+    border: 1px solid #63a4ff;
+}
+form {
+    padding: 10px;
+}
+fieldset {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    flex-basis: 100%;
+    background-image: var(--nav);
+    border: none;
+}
+fieldset legend {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.info select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    
+}
+/*thanks*/
+.thanks{
+    padding: 50px;
+    text-align: center;
+}

@@ -1,0 +1,54 @@
+{
+    "local-company": [
+        {
+         "name": "My English Room-Japan",
+         "address": "1855-1529 Kubo-cho, Matsusaka",
+         "contact_number": "070-4212-6414",
+         "logo": "my-er.jpg"
+        },
+        {
+            "name": "Philnet Matsusaka",
+            "address": "1855-41 Kubocho, Matsusaka",
+            "contact_number": "0598-60-2211",
+            "logo": "philnet.jpg"
+        },
+        {
+            "name": "Sweet Serenity",
+            "address": "1083 Shimomurachō, Matsusaka",
+            "contact_number": "090-8156-5272",
+            "logo": "sweet_serenity.jpg"
+        },
+        {
+            "name": "Top One GL Sari-sari Store",
+            "address": "906-828 Shimomuracho, Matsusaka",
+            "contact_number": "0598-29-8007",
+            "logo": "none.jpg"
+            
+        },
+        {
+            "name": "Alma Sari-sari Store",
+            "address": "Kasugacho 2-112, Matsusaka",
+            "contact_number": "080-3686-1991",
+            "logo": "almasarisaristore.jpg"
+        },
+        {
+            "name": "Paulette’s Kitchen",
+            "address": "508-1 Seiseichō, Matsusaka",
+            "contact_number": "090-5960-2351",
+            "logo": "paulettes_kitchen.jpg"
+        },
+        {
+            "name": "JenArt Party Decor",
+            "address": "491-4 Tamurachō, Matsusaka",
+            "contact_number": "080-3858-1291",
+            "logo": "none.jpg"
+        },
+        {
+            "name": "Just Sweets and Treats",
+            "address": "478-17 Maenoheta, Matsusaka",
+            "contact_number": "070-5522-3338",
+            "logo": "justTreats.jpg"
+        }
+        
+    ]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the page intended for individual to report the weather condition in their place so that Klimagator could assist them properly with safety precaution updates.">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/PHCHAMBERLogor.svg">
+    <title>PhChamber: Contact</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" media="all">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width: 426px)">
+    <link rel="stylesheet" href="css/large.css" media="(min-width:769px)">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+</head>
+<body>
+    <div id ="alert"></div>
+    <div class="headerNav">
+        <header>
+                <img src="images/newPHCHAMBERLogo.svg" alt="phChamber logo" height="50" width="50">
+            <div class="head">
+                <div>PhChamber</div>
+                <p class="moto">Makes your future better.</p>
+            </div>
+        </header>
+        <nav>
+            <ul class="navi">
+                <li><a class="menuBtn" href="#">&#9776; Menu</a></li>
+                <li><a href="phchamber.html">Home</a></li>
+                <li><a href="matsusaka.html">Matsusaka</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+<main>
+    <div class="hero-sub">
+        <h1 class="sub-title">Contact Us</h1>
+    </div>
+    <section class="section-sub">
+        <h2>Meet Our Board of Directors</h2>
+    <div class="board">
+        <div>
+            <h3>President</h3>
+            <img src="images/ceo.jpg" alt="phchamber president">
+            <span class="chair-n"><strong>John Franklin</strong></span><br>
+            <span class="chair-p">President & CEO of MyEnglish Room</span>
+        </div>
+        
+        <div>
+            <h3>Chair</h3>
+            <img src="images/chair.jpg" alt="chairman images">
+            <span class="chair-n"><strong>Gerwin Palec</strong></span><br>
+            <span class="chair-p">CEO, Akabane Bussan Ltd</span>
+        </div>
+        <div>
+            <h3> Vice Chair</h3>
+            <img src="images/vchair.jpg" alt="phChamber Vice chair">
+            <span class="chair-n"><strong>Angelie Taketomi</strong></span><br>
+            <span class="chair-p">CEO, Crafty FHAM</span>
+        </div>
+    </div>
+</section>
+    <section class="section-sub section-form">
+        <h3>Send Us Message</h3>
+        <form nethod="get" action="thanks.html">
+            <div class="info"><label for="fname">Full Name*</label><input id="fname" type="text" placeholder="Annabelle Panganud" name="fullname" pattern="[A-Za-z ]{5,}" required autofocus></div>
+            <div class="info"><label for="email">Email*</label><input id="email" type="email" placeholder="abcde@phchamber.com"></div>
+            <div class="info"><label for="phone">Phone*</label><input id="phone" type="tel" placeholder="01234567890" required></div>
+            <div class="info"><label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="8" placeholder="Please write your message or inquiries here."></textarea>
+            </div>
+            <input class="inputBtn" type="submit" value="Send Message">
+        </form>
+    </section>
+</main>
+<footer>
+    <div class="c-container">
+    <div class="contact-info">
+        <div class="con-title">Contact Us</div>
+        <span><i class="fas fa-phone"></i> 0598-51-7341</span>
+        <span><i class="fas fa-envelope"></i> president@phChamber.com</span>
+        <span><i class="fas fa-map-marker-alt"></i> 161-2 Wakabacho, Matsusaka</span>
+    </div>
+    <div class="socialM">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+    </div>
+</div>
+    <div class="copy">
+    &copy;Copyright<span id="year"></span>| PhChamber | Mie, Japan |<br>
+    <span id="lastModif"></span>
+</div>
+</footer>
+<script src="js/contact.js"></script>
+</body>
+</html>

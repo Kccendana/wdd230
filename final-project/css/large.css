@@ -1,0 +1,41 @@
+@media only screen and (min-width:769px){
+    header{
+        /*padding: 0 0 0 12%;*/
+        justify-content: flex-start;
+    }
+    .navi {
+        display: flex;
+        font-size: .9rem;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    /* padding: 0 10%;*/
+    }
+    .navi li {
+        display: block;
+        flex: 1 1 auto;
+
+        
+    }
+    .navi a {
+        text-align: center;
+    }
+    .navi li:first-child {
+        display: none;}
+    
+    /*directory*/
+    .directory{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /*contact*/
+    /*
+    .board{
+        
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .chair-p{
+        font-size: .8rem;
+    }*/
+}    
