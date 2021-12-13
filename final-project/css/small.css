@@ -22,7 +22,7 @@ body{
     font-family: 'Roboto Slab', serif;
     min-width: 320px;
     background-color: var(--color2);
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
 }
 .head div{
@@ -163,6 +163,59 @@ contact-info span,
 }
 /*home*/
 /*matsusaka*/
+.scontainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    flex-wrap: wrap;
+}
+
+.currentW{
+    background-color: var(--color2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'img temp'
+    'img temp'
+    'desc hum';
+    align-items: center;
+}
+.currentemp{grid-area:temp;
+font-size: 3rem;}
+.hum{grid-area: hum;}
+.desc{grid-area: desc;}
+.fore-col{
+    width: 100%;
+}
+.fore-col .col:nth-child(even){
+    background-color: #63a4ff;
+}
+.weather{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #83eaf1;
+    margin: 0 auto;
+    
+}
+.weather img{
+    width: 80px;
+}
+.temp{
+    font-size: 1.5rem;
+}
+.humicon{
+    width: 10px;
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
 /*directory*/
 .directory{
     margin: 0 auto;
@@ -190,6 +243,7 @@ contact-info span,
 }
 .directory section img{
    place-self: center;
+   width: 100px;
 }
 .listview{
     display: grid;
@@ -230,10 +284,10 @@ contact-info span,
 /*contact*/
 .section-sub{
     width: 100%;
-    padding: 50px;
     margin: auto;
     text-align: center;
     min-height: 60vh;
+    padding: 1rem;
     /*background-color: var(--border-color);*/
 }
 .section-sub h2{
