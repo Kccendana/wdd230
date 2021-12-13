@@ -23,7 +23,10 @@ body{
     min-width: 320px;
     background-color: var(--color2);
     width: 100%;
-    overflow-x: hidden;
+}
+main{
+    width: 980px;
+    margin: 0 auto;
 }
 .head div{
     font-size: 1.25rem;
@@ -180,6 +183,7 @@ contact-info span,
     'img temp'
     'desc hum';
     align-items: center;
+    padding: 5px;
 }
 .currentemp{grid-area:temp;
 font-size: 3rem;}
@@ -198,6 +202,8 @@ font-size: 3rem;}
     text-align: center;
     background-color: #83eaf1;
     margin: 0 auto;
+    border-radius: 5px;
+    box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
 .weather img{

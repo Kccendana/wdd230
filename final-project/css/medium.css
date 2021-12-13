@@ -40,4 +40,9 @@
     .inputBtn{
         width: 9rem;
     }
+    /*directory*/
+    .list{
+        display: block;
+    }
+    
 }

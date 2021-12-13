@@ -24,7 +24,7 @@
         display: none;}
     
     /*directory*/
-    .directory{
+    .gridview{
         grid-template-columns: 1fr 1fr 1fr;
     }
     /*contact*/
@@ -38,4 +38,9 @@
     .chair-p{
         font-size: .8rem;
     }*/
+    /*matsusaka*/
+    .scontainer{
+        flex-direction: row;
+    }
+ 
 }    
