@@ -5,7 +5,7 @@
 }
 :root{
     --gradient1: radial-gradient(circle, #009ffd, #2480db, #2d62b8, #2e4595, #2a2a72);
-    --color2: #EFFAFF; 	
+    --body: #EFFAFF; 	
     --nav: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
     --color4: rgb(0,94,184);
     --color5: rgba(249,66,58, 0.7);
@@ -20,13 +20,13 @@ img{
 }
 body{
     font-family: 'Roboto Slab', serif;
-    min-width: 320px;
-    background-color: var(--color2);
-    width: 100%;
+    min-width: 355px;
+    background-color: var(--body);
+    max-width: 1980px;
+    margin: auto;
 }
 main{
-    width: 980px;
-    margin: 0 auto;
+    margin: auto;
 }
 .head div{
     font-size: 1.25rem;
@@ -134,10 +134,12 @@ footer a{
     font-weight: bold;
     font-size: 1.3rem;
 }
-.socialM{
+.socialM {
     font-size: 2rem;
     margin-bottom: 1rem;
-}
+    display: flex;
+    justify-content: center;
+    gap: 18px;}
 .copy{
     padding: 3% 0;
 }
@@ -151,6 +153,13 @@ contact-info span,
 }
 .hero-sub{
     background-image: var(--overlay), url(../images/contact-banner.avif);
+    
+}
+.hero-submatsusaka{
+    background-image: var(--overlay), url(../images/sub-form.avif);
+}
+.hero-sub,
+.hero-submatsusaka{
     width: 100%;
     min-height: 30vh;
     background-size: cover;
@@ -164,8 +173,28 @@ contact-info span,
     top: 35%;
     left: 5%;
 }
+.foot{
+    display: flex;
+    flex-direction: column;
+}
+.foot >*{
+    flex: 1;
+}
 /*home*/
+.weatherEvcon{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.weatherEvcon >*{
+    flex: 1;
+    width: 100%;
+}
 /*matsusaka*/
+article{
+    padding: 2rem;
+    align-items: center;
+}
 .scontainer{
     width: 80%;
     display: flex;
@@ -184,6 +213,8 @@ contact-info span,
     'desc hum';
     align-items: center;
     padding: 5px;
+    /*border: 1px solid #63a4ff;*/
+    border-radius: 5px;
 }
 .currentemp{grid-area:temp;
 font-size: 3rem;}
@@ -204,7 +235,7 @@ font-size: 3rem;}
     margin: 0 auto;
     border-radius: 5px;
     box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+    padding: 5px;
 }
 .weather img{
     width: 80px;
@@ -222,31 +253,79 @@ font-size: 3rem;}
     justify-content: center;
     align-items: center;
 }
-/*directory*/
-.directory{
-    margin: 0 auto;
-    display:grid;
-    grid-template-columns: 1fr;
-    padding: 20px;
-    gap: 10px;
+.event{
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+}
+.evenCal{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
     
 }
+.edesc{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.eDate{
+    background-image: var(--nav);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 3rem;
+    
+}
+.day{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.eName{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.stayMatsu{
+    display:flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 10px;
+}
+.stayMatsu div img{
+    height: 250px;
+}
+/*directory*/
+.gridview section h2
 .directory section h2{
-    font-size: 1rem;
+   /* font-size: 1rem;*/
     text-align: left;
 }
+.directory,
+.gridview{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 80%;
+    padding: 1rem;
+    gap: 10px;
+}
+.gridview section,
 .directory section{
     display: flex;
     flex-direction: column;
     padding: 10px;
     border: 1px solid var(--color2);
     align-items: left;
-    background-color: #63a4ff;
     background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
     border-radius: 10px;
-    width: 300px;
+    width: 100%;
+    height: auto;
    margin: 0 auto;
+   gap: 5px;
 }
+.gridview section img,
 .directory section img{
    place-self: center;
    width: 100px;
@@ -254,23 +333,23 @@ font-size: 3rem;}
 .listview{
     display: grid;
     grid-template-columns: 1fr;
-   width: 100%;
    margin: 0 auto;
+   gap: 10px;
+   padding: 1rem;
 }
 .listview section{
     display: grid;
-    grid-template-columns: 100px 1fr 1fr 1fr;
+    grid-template-columns: 100px 1fr .75fr .5fr;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
     align-items: center;
-    justify-items: left;  
+    justify-items: left; 
+    width: 80%; 
+    margin: auto;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 5px;
 }
 
-.listview section h2{
-    margin-left: 20px;
-    
-}
-.gridview section h2{
-    margin-top: 20px;
-}
 .view{
     margin: 0 auto;
     text-align: center;
@@ -292,7 +371,7 @@ font-size: 3rem;}
     width: 100%;
     margin: auto;
     text-align: center;
-    min-height: 60vh;
+    height: auto;
     padding: 1rem;
     /*background-color: var(--border-color);*/
 }

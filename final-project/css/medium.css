@@ -41,8 +41,21 @@
         width: 9rem;
     }
     /*directory*/
+    .directory,
+    .gridview{
+        grid-template-columns: 1fr 1fr;
+    }
     .list{
         display: block;
     }
-    
+    .stayMatsu{
+        flex-direction: row;
+    }
+    .foot{
+        flex-direction: row;
+        gap: 15px;
+    }
+    .weatherEvcon{
+        flex-direction: row;
+    }
 }

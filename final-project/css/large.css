@@ -24,6 +24,7 @@
         display: none;}
     
     /*directory*/
+    .directory,
     .gridview{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -42,5 +43,13 @@
     .scontainer{
         flex-direction: row;
     }
- 
+    imgright{
+        width: 450px;
+        margin: 15px;
+        float: right;
+        box-shadow: 10px 10px 10px rgb(70 69 69 / 20%);
+    }
+ .foot{
+     display: flex;
+ }
 }    
