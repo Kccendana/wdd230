@@ -57,9 +57,8 @@
         margin: 1rem;
 
     }
-    .matsusakabeefright{
+    img.matsubeefright {
         float: right;
-        margin-right: 1rem;
     }
  .foot{
      display: flex;
