@@ -15,8 +15,13 @@
 h1, h2, h3, h4{
     font-family: 'Raleway', sans-serif;
 }
-img{
-    width: 100%;
+img {
+    max-width: 100%;
+    padding: 10px;
+    background: white;
+    box-shadow: 5px 5px 10px rgb(70 69 69 / 20%);
+    border-radius: 5px;
+    margin: 5px;
 }
 body{
     font-family: 'Roboto Slab', serif;
@@ -145,7 +150,12 @@ footer a{
 }
 .c-container{
     align-items: center;
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.map iframe{
+    width: auto;
 }
 contact-info span,
 .con-title{
@@ -191,8 +201,19 @@ contact-info span,
     width: 100%;
 }
 /*matsusaka*/
+.matsuDesc p {
+    line-height: 1.5rem;
+    margin-top: .8rem;
+}
 article{
-    padding: 2rem;
+    padding: 2.5rem;
+    align-items: center;
+    padding-top: 0;
+}
+article h2{
+    margin: 1rem;
+}
+img .imgright{
     align-items: center;
 }
 .scontainer{
@@ -258,7 +279,6 @@ font-size: 3rem;}
     border: 1px solid;
     border-radius: 5px;
     box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: auto;
 }
 .evenCal{
     display: flex;
@@ -287,15 +307,28 @@ font-size: 3rem;}
     font-size: 1.5rem;
     font-weight: 500;
 }
-.stayMatsu{
-    display:flex;
+.stayMatsu {
+    display: flex;
     flex-direction: column;
     padding: 2rem;
-    gap: 10px;
+    gap: 1rem;
+    justify-content: center;
+}
+.stayMatsu div{
+    display: flex;
+    flex-direction: column;
 }
 .stayMatsu div img{
     height: 250px;
 }
+
+img.imgright {
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
 /*directory*/
 .gridview section h2
 .directory section h2{

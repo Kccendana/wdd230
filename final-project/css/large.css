@@ -40,14 +40,26 @@
         font-size: .8rem;
     }*/
     /*matsusaka*/
+    .stayMatsu{
+        flex-direction: row;
+    }
     .scontainer{
         flex-direction: row;
     }
-    imgright{
-        width: 450px;
-        margin: 15px;
+    .imgright {
         float: right;
-        box-shadow: 10px 10px 10px rgb(70 69 69 / 20%);
+        width: auto;
+        margin-right: 1rem;
+        padding: 15px;
+    }
+    .imgleft{
+        float: left;
+        margin: 1rem;
+
+    }
+    .matsusakabeefright{
+        float: right;
+        margin-right: 1rem;
     }
  .foot{
      display: flex;

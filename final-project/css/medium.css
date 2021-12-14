@@ -7,12 +7,8 @@
     .board{
         flex-direction: row;
     }
-    /*.c-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        'map contact-info'
-        'map socialM';
+    .c-container{
+       flex-direction: row;
     }
     .map{
         grid-area: map;
@@ -30,7 +26,6 @@
         flex-direction: row;
     }
     label{
-        flex-basis: 9rem;
         flex-grow: 0;
         flex-shrink: 0;
     }
@@ -48,9 +43,7 @@
     .list{
         display: block;
     }
-    .stayMatsu{
-        flex-direction: row;
-    }
+  
     .foot{
         flex-direction: row;
         gap: 15px;
