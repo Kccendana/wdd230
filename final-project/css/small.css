@@ -347,7 +347,7 @@ img.imgright {
 .gridview section h2
 .directory section h2{
    /* font-size: 1rem;*/
-    text-align: left;
+    
 }
 .directory,
 .gridview{
@@ -364,7 +364,6 @@ img.imgright {
     flex-direction: column;
     padding: 10px;
     border: 1px solid var(--color2);
-    align-items: left;
     background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
     border-radius: 10px;
     width: 100%;
@@ -376,6 +375,7 @@ img.imgright {
 .directory section img{
    place-self: center;
    width: 100px;
+   background-color: white;
 }
 .listview{
     display: grid;
