@@ -4,12 +4,12 @@
     margin: 0;
 }
 :root{
-    --gradient1: radial-gradient(circle, #009ffd, #2480db, #2d62b8, #2e4595, #2a2a72);
+    --gradient1: #2a2a72;
     --body: #EFFAFF; 	
     --nav: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
     --color4: rgb(0,94,184);
     --color5: rgba(249,66,58, 0.7);
-    --overlay: radial-gradient(circle,rgba(42,42,114, 0.7),rgba(42,42,114, 0.7));
+    --overlay: radial-gradient(circle,rgba(7, 7, 7, 0.7),rgba(0, 0, 0, 0.7));
 
 }
 h1, h2, h3, h4{
@@ -38,7 +38,7 @@ main{
 header{
     display: flex;
     justify-content: left;
-    background-image: var(--gradient1);
+    background: var(--gradient1);
     padding: 10px;
 }
 header img{
@@ -116,7 +116,7 @@ nav{
     display: block;
 }
 footer{
-    background-image: var(--gradient1);
+    background: var(--gradient1);
     color: white;
     text-align: center;
     padding: 20px;
@@ -580,7 +580,7 @@ a.btn {
     flex-direction: column;
 }
 .purpose img{
-    background-image: var(--gradient1);
+    background: var(--gradient1);
     width: 500px;
 }
 .purpose >*{
