@@ -18,9 +18,9 @@ h1, h2, h3, h4{
 }
 img {
     max-width: 100%;
-    box-shadow: 5px 5px 10px rgb(70 69 69 / 20%);
+   /* box-shadow: 5px 5px 10px rgb(70 69 69 / 20%);
     border-radius: 5px;
-    margin: 5px;
+    margin: 5px;*/
 }
 body{
     font-family: 'Roboto Slab', serif;
