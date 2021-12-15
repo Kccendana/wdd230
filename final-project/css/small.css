@@ -38,7 +38,7 @@ main{
 header{
     display: flex;
     justify-content: left;
-    background: var(--gradient1);
+    background-image: var(--nav);
     padding: 10px;
 }
 header img{
@@ -51,7 +51,7 @@ header img{
     justify-content: center;
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
-    color: white;
+    color: black;
 }
 .moto {
     font-style: italic;
@@ -89,7 +89,7 @@ nav{
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 600;
     transition: 0.5s;
     font-size: 1.1rem;
