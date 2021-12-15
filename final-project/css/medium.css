@@ -1,9 +1,5 @@
 @media only screen and (min-width: 426px){
-    /*.board{
-        
-        grid-template-columns: 1fr 1fr 1fr;
-
-    }*/
+   
     .board{
         flex-direction: row;
     }
@@ -20,15 +16,17 @@
     }
     .socialM{
         grid-area: socialM;
-    }*/
+    }
     /*contact*/
     .info{
         flex-direction: row;
     }
     label{
+        flex-basis: 9rem;
         flex-grow: 0;
         flex-shrink: 0;
     }
+    
     input{
         width: 100%;
     }
@@ -51,4 +49,6 @@
     .weatherEvcon{
         flex-direction: row;
     }
+   
+    
 }

@@ -28,17 +28,7 @@
     .gridview{
         grid-template-columns: 1fr 1fr 1fr;
     }
-    /*contact*/
-    /*
-    .board{
-        
-        align-items: center;
-        justify-items: center;
-        margin: 0 auto;
-    }
-    .chair-p{
-        font-size: .8rem;
-    }*/
+
     /*matsusaka*/
     .stayMatsu{
         flex-direction: row;
@@ -62,5 +52,15 @@
     }
  .foot{
      display: flex;
+ }
+ .ads{
+     flex-direction: row;
+ }
+ .matsu-home{
+     flex-direction: row;
+     gap: 1rem;
+ }
+ .purpose{
+    flex-direction: row;
  }
 }    
