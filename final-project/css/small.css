@@ -8,7 +8,7 @@
     --body: #EFFAFF; 	
     --nav: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
     --color1: #00B0F0;
-    --gradient1: #2a2a72;
+    --gradient1: #ffffff;
     --color4: rgb(0,94,184);
     --color5: #F97A9A;
     --overlay: radial-gradient(circle,rgba(7, 7, 7, 0.7),rgba(0, 0, 0, 0.7));
@@ -151,23 +151,19 @@ contact-info span,
     padding: 10px;
 }
 .hero-sub{
-    background-image: var(--overlay), url(../images/contact-banner.avif);
+    background-image: url(../images/contact-banner.avif);
     
 }
 .hero-submatsusaka{
-    background-image: var(--overlay), url(../images/sub-form.avif);
+    background-image: url(../images/sub-form.avif);
 }
 .hero-contact{
-    background-image: var(--overlay), url(../images/directory.jpg)
+    background-image: url(../images/directory.jpg)
 }
 .matsu-home{
-    background-image: var(--overlay),url(../images/matsu-home.jpeg);
     width: 100%;
-    min-height: 50vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    
+    background: var(--gradient1);
+   
 }
 .hero-contact,
 .hero-sub,
@@ -532,19 +528,16 @@ fieldset legend {
 .matsu-home{
     display: flex;
     padding: 5rem;
-    color: white;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-}
-.home-text{
-
 }
 .home-text h1 {
     margin-top: 0;
     width: 400px;
     font-size: 3rem;
 }
+.hometext2,
 .hometext2 {
     width: 400px;
     font-size: 1.3rem;
@@ -552,7 +545,7 @@ fieldset legend {
 a.btn {
     color: black;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid rgb(9, 106, 170);
     padding: 12px 24px;
     display: inline-block;
     margin: 10px;
