@@ -27,7 +27,7 @@ body{
     font-family: 'Roboto Slab', serif;
     min-width: 355px;
     background-color: var(--body);
-    max-width: 1980px;
+    max-width: 1440px;
     margin: auto;
 }
 main{
@@ -96,12 +96,14 @@ nav{
     font-size: 1.1rem;
 }
 .navi a:hover {
-    color: white;
+   /* color: white;*/
     background-color: var(--color5);
    
 }
 .navi .active{
-    color: white;}
+  /*  color: white;*/
+    background-color: white;
+}
 .responsive li {
     display: block;
 }
@@ -160,10 +162,13 @@ contact-info span,
 .hero-contact{
     background-image: url(../images/directory.jpg)
 }
-.matsu-home{
+.matsu{
+    background-image: url(../images/matsu-homeL.jpg);
     width: 100%;
-    background: var(--gradient1);
-   
+    min-height: 40vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 .hero-contact,
 .hero-sub,
@@ -527,10 +532,14 @@ fieldset legend {
 }
 .matsu-home{
     display: flex;
-    padding: 5rem;
+    padding: 3rem;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
+}
+.matsu-home >*{
+    flex: 1;
 }
 .home-text h1 {
     margin-top: 0;
@@ -541,6 +550,7 @@ fieldset legend {
 .hometext2 {
     width: 400px;
     font-size: 1.3rem;
+    width: 100%;
 }
 a.btn {
     color: black;
